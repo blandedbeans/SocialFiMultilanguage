@@ -1,0 +1,70 @@
+{
+  "Welcome": "欢迎来到BCharity Baas👋",
+  "Welcome Description": "建立在区块链上的下一代群体驱动的可组合、去中心化和无许可的公益部门Web3。",
+
+  "VHR Title": "VHR Crypto OnChain志愿者时间",
+  "VHR Description": "有史以来第一个原生实用代币，透明地追踪用于志愿服务的全球捐款。",
+
+  "Beta Title": "Beta警告",
+  "Beta Description": "BCharity仍处于测试阶段, 东西可能会坏掉, 请小心处理我们。",
+  "Get Testnet": "获取testnet令牌",
+
+  "Recommended Users": "推荐用户",
+
+  "Change Language": "更改语言",
+
+  "About": "关于",
+  "Donate": "捐赠",
+  "Status": "状况",
+  "Vote": "投票",
+  "Thanks": "感谢",
+  "Privacy": "隐私",
+  "Terms": "条款",
+
+  "Copyright": "© BCharity由ECSSEN(注册慈善机构)提供支持。)",
+
+  "Search": "搜索...",
+
+  "Home": "首页",
+  "Explore": "探索",
+  "Groups": "群体",
+  "More": "更多",
+  "Login": "登录",
+  "Top Commented": "热门评论",
+  "Top Collected": "收集的顶部",
+  "Top Mirrored": "顶部有镜子",
+  "Latest": "最新的",
+
+  "Loading group": "加载群组页面",
+  "Most Active": "最活跃",
+  "Fastest Growing": "增长最快的",
+  "member": "会员",
+
+  "Contact Button": "联系我们",
+  "Contact Title": "联系BCharity",
+  "Contact Description": "联系我们，帮助你解决这个问题。",
+  "Subject": "主题",
+  "What happened": "发生了什么事？",
+  "Message": "我们能提供什么帮助？",
+  "Submit": "提交",
+
+  "Thanks Title": "谢谢你!",
+  "Thanks Subtitle": "为支持我们的团体",
+  "Vercel": "Vercel将最佳的开发者体验与对终端用户性能的执着关注相结合。Vercel平台使前端团队能够做他们最好的工作。",
+  "Goto Vercel": "➜ 转到 Vercel",
+  "Gitpod": "Gitpod通过在你的浏览器中提供预制的、协作的开发者环境来简化开发者的工作流程--由VS Code提供支持。",
+  "Goto Gitpod": "➜ 转到 Gitpod",
+  "Imagekit": "具有自动优化、实时转换和存储功能的图像CDN,你可以在几分钟内与现有设置整合。",
+  "Goto Imagekit": "➜ 转到 Imagekit",
+
+  "Privacy Title": "隐私政策",
+  "Last Updated": "2022年5月18日更新",
+  "Policy": "BCharity.xyz.('BCharity' 或 '我们'）尊重并保护用户（'您' 或 '用户'）的隐私。BCharity将根据本隐私政策（'政策'）收集和使用您在使用BCharity过程中产生的个人信息。",
+  "Information Collection": "我们收集哪些信息",
+  "Information Collection1": "我们通过一系列方式获得关于你的信息。",
+  "Information Collection2": "你给我们的信息。我们向你收集的信息包括",
+  "Information Collection3": "有关交易的网络信息。",
+  "Information Collection4": "联系信息，如用户名和电子邮件。",
+  "Information Collection5": "反馈和通信，例如您在回答调查时提供的信息，当您参与市场研究活动，报告服务问题，接受客户支持或以其他方式与我们通信。",
+  "Information Collection6": "Usage information, such as information about how you interact with us, and it is anonymous;"
+}

@@ -9,6 +9,7 @@ import Logger from '@lib/logger'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { ChangeEvent, FC, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import UserProfile from '../UserProfile'
 
@@ -33,6 +34,7 @@ const Search: FC<Props> = ({ hideDrodown = false }) => {
   const { push, pathname, query } = useRouter()
   const [searchText, setSearchText] = useState<string>('')
   const dropdownRef = useRef(null)
+  const { t } = useTranslation('common')
 
   useOnClickOutside(dropdownRef, () => setSearchText(''))
 
@@ -73,7 +75,7 @@ const Search: FC<Props> = ({ hideDrodown = false }) => {
           <Input
             type="text"
             className="py-2 px-3 text-sm"
-            placeholder="Search..."
+            placeholder={t('Search')}
             value={searchText}
             onChange={handleSearch}
           />

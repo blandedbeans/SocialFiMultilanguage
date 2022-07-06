@@ -10,6 +10,7 @@ import { useRouter } from 'next/router'
 import { FC } from 'react'
 import { useAppPersistStore } from 'src/store/app'
 
+import TranslateButton from '../TranslateButton'
 import MenuItems from './MenuItems'
 import MoreNavItems from './MoreNavItems'
 import Search from './Search'
@@ -71,6 +72,7 @@ const Navbar: FC = () => {
         />
         <NavItem url="/groups" name="Groups" current={pathname == '/groups'} />
         <MoreNavItems />
+        <TranslateButton />
       </>
     )
   }
