@@ -33,7 +33,7 @@ const Title = () => {
       {currentUser ? (
         <>
           <SparklesIcon className="w-4 h-4 text-yellow-500" />
-          <div>Who to follow</div>
+          <div>{t('Who to follow')}</div>
         </>
       ) : (
         <>

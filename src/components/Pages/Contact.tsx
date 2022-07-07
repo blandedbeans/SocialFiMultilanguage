@@ -69,7 +69,7 @@ const Contact: FC = () => {
                 {...form.register('subject')}
               />
               <TextArea
-                label="Message"
+                label={t('Contact message')}
                 placeholder={t('Message')}
                 {...form.register('message')}
               />

@@ -96,7 +96,7 @@ const MenuItems: FC<Props> = ({ pingData }) => {
                     clsx({ 'dropdown-active': active }, 'menu-item')
                   }
                 >
-                  <div>Logged in as</div>
+                  <div>{t('Logged in as')}</div>
                   <div className="truncate">
                     <Slug
                       className="font-bold"
@@ -115,7 +115,7 @@ const MenuItems: FC<Props> = ({ pingData }) => {
                 >
                   <div className="flex items-center space-x-1.5">
                     <UserIcon className="w-4 h-4" />
-                    <div>Your Profile</div>
+                    <div>{t('Your Profile')}</div>
                   </div>
                 </Menu.Item>
                 <Menu.Item
@@ -127,7 +127,7 @@ const MenuItems: FC<Props> = ({ pingData }) => {
                 >
                   <div className="flex items-center space-x-1.5">
                     <CogIcon className="w-4 h-4" />
-                    <div>Settings</div>
+                    <div>{t('Settings')}</div>
                   </div>
                 </Menu.Item>
                 <Menu.Item
@@ -145,7 +145,7 @@ const MenuItems: FC<Props> = ({ pingData }) => {
                 >
                   <div className="flex items-center space-x-1.5">
                     <LogoutIcon className="w-4 h-4" />
-                    <div>Logout</div>
+                    <div>{t('Logout')}</div>
                   </div>
                 </Menu.Item>
                 {profiles?.length > 1 && (
@@ -199,12 +199,12 @@ const MenuItems: FC<Props> = ({ pingData }) => {
                     {theme === 'light' ? (
                       <>
                         <MoonIcon className="w-4 h-4" />
-                        <div>Dark mode</div>
+                        <div>{t('Dark mode')}</div>
                       </>
                     ) : (
                       <>
                         <SunIcon className="w-4 h-4" />
-                        <div>Light mode</div>
+                        <div>{t('Light mode')}</div>
                       </>
                     )}
                   </div>

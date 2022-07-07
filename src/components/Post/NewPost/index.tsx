@@ -27,6 +27,7 @@ import uploadToIPFS from '@lib/uploadToIPFS'
 import dynamic from 'next/dynamic'
 import { Dispatch, FC, useState } from 'react'
 import toast from 'react-hot-toast'
+import { useTranslation } from 'react-i18next'
 import {
   APP_NAME,
   CONNECT_WALLET,
@@ -145,7 +146,7 @@ const NewPost: FC<Props> = ({ setShowModal, hideCard = false }) => {
       toast.error(error?.data?.message ?? error?.message)
     }
   })
-
+  const { t } = useTranslation('common')
   const [broadcast, { data: broadcastData, loading: broadcastLoading }] =
     useMutation(BROADCAST_MUTATION, {
       onCompleted,
@@ -297,7 +298,7 @@ const NewPost: FC<Props> = ({ setShowModal, hideCard = false }) => {
             <MentionTextArea
               error={postContentError}
               setError={setPostContentError}
-              placeholder="What's happening?"
+              placeholder={t('Whats happening')}
             />
           )}
           <div className="block items-center sm:flex">

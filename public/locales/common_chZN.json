@@ -105,6 +105,9 @@
   "NFTs": "NFTs",
   "No posts": "好像还没有发布",
 
+  "Whats happening": "发生了什么?",
+  "Who to follow": "关注谁",
+
   "Logged in as": "登录为",
   "Your profile": "你的资料",
   "Settings": "设置",
@@ -116,5 +119,30 @@
   "Create fundraise": "创建筹款活动",
   "Create profile": "创建简介",
 
-  "Contact message": "信息"
+  "Contact message": "信息",
+
+  "Create group description": "创建新的分权小组",
+  "Group name": "命名",
+  "Group description": "名称描述",
+  "Group description placeholder": "告诉我们一些关于这个团体的情况!",
+  "Avatar": "头像图片",
+  "Choose file": "选择文件",
+  "No file chosen": "没有选择文件",
+  "Create": "创建",
+
+  "Create fundraise description": "创建新的分散式募捐机构",
+  "Fundraise title": "标题",
+  "Select currency": "选择货币",
+  "Contribution": "捐款金额",
+  "Funding goal": "筹资目标",
+  "Recipient": "资助接受者",
+  "Referral": "介绍费",
+  "Referral info": "当有人反映募捐活动时，他们将因推荐该活动而获得一定比例的奖励。",
+  "Fundraise description": "描述",
+  "Fundraise description placeholder": "告诉我们一些关于募捐者的情况!",
+  "Cover image": "封面图片",
+
+  "Create profile description": "创建新的分散的配置文件",
+  "Handle": "处理",
+  "Signup": "报名"
 }

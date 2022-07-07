@@ -106,6 +106,9 @@
   "NFTs": "NFTs",
   "No posts": "seems like not posted yet",
 
+  "Whats happening": "What's happening?",
+  "Who to follow": "Who to follow",
+
   "Logged in as": "Logged in as",
   "Your profile": "Your profile",
   "Settings": "Settings",
@@ -117,5 +120,32 @@
   "Create fundraise": "Create fundraise",
   "Create profile": "Create profile",
 
-  "Contact message": "Message"
+  "Contact message": "Message",
+
+  "Create group description": "Create new decentralized group",
+  "Group name": "Name",
+  "Group description": "Description",
+  "Group description placeholder": "Tell us something about the group!",
+  "Avatar": "Avatar",
+
+  "Choose file": "Choose File",
+  "No file chosen": "No file chosen",
+
+  "Create": "Create",
+
+  "Create fundraise description": "Create new decentralized fundraise",
+  "Fundraise title": "Title",
+  "Select currency": "Select Currency",
+  "Contribution": "Contribution amount",
+  "Funding goal": "Funding Goal",
+  "Recipient": "Funding Recipient",
+  "Referral": "Referral Fee",
+  "Referral info": "When someone mirrors the fundraise they will get some reward in percentage for referring it.",
+  "Fundraise description": "Description",
+  "Fundraise description placeholder": "Tell us something about the fundraise!",
+  "Cover image": "Cover Image",
+
+  "Create profile description": "Create new decentralized profile",
+  "Handle": "Handle",
+  "Signup": "Signup"
 }

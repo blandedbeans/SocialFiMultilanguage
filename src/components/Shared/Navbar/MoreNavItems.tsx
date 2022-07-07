@@ -58,7 +58,7 @@ const MoreNavItems: FC = () => {
                   >
                     <div className="flex items-center space-x-1.5">
                       <UsersIcon className="w-4 h-4" />
-                      <div>Create Group</div>
+                      <div>{t('Create group')}</div>
                     </div>
                   </Menu.Item>
                   <Menu.Item
@@ -70,7 +70,7 @@ const MoreNavItems: FC = () => {
                   >
                     <div className="flex items-center space-x-1.5">
                       <CashIcon className="w-4 h-4" />
-                      <div>Create Fundraise</div>
+                      <div>{t('Create fundraise')}</div>
                     </div>
                   </Menu.Item>
                   {!IS_MAINNET && (
@@ -83,7 +83,7 @@ const MoreNavItems: FC = () => {
                     >
                       <div className="flex items-center space-x-1.5">
                         <UserIcon className="w-4 h-4" />
-                        <div>Create Profile</div>
+                        <div>{t('Create profile')}</div>
                       </div>
                     </Menu.Item>
                   )}
