@@ -8,6 +8,7 @@ import {
 import nFormatter from '@lib/nFormatter'
 import clsx from 'clsx'
 import React, { Dispatch, FC, ReactNode } from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface Props {
   stats: ProfileStats
@@ -23,7 +24,7 @@ const FeedType: FC<Props> = ({ stats, setFeedType, feedType }) => {
     count?: number
     testId: string
   }
-
+  const { t } = useTranslation('common')
   const FeedLink: FC<FeedLinkProps> = ({
     name,
     icon,
@@ -59,28 +60,28 @@ const FeedType: FC<Props> = ({ stats, setFeedType, feedType }) => {
   return (
     <div className="flex overflow-x-auto gap-3 px-5 pb-2 mt-3 sm:px-0 sm:mt-0 md:pb-0">
       <FeedLink
-        name="Posts"
+        name={t('Posts')}
         icon={<PencilAltIcon className="w-4 h-4" />}
         type="POST"
         count={stats?.totalPosts}
         testId="type-posts"
       />
       <FeedLink
-        name="Comments"
+        name={t('Comments')}
         icon={<ChatAlt2Icon className="w-4 h-4" />}
         type="COMMENT"
         count={stats?.totalComments}
         testId="type-comments"
       />
       <FeedLink
-        name="Mirrors"
+        name={t('Mirrors')}
         icon={<SwitchHorizontalIcon className="w-4 h-4" />}
         type="MIRROR"
         count={stats?.totalMirrors}
         testId="type-mirrors"
       />
       <FeedLink
-        name="NFTs"
+        name={t('NFTs')}
         icon={<PhotographIcon className="w-4 h-4" />}
         type="NFT"
         testId="type-nfts"

@@ -87,9 +87,35 @@
   "Lost Description": "This page could not be found.",
   "Go Home": "Go to home",
 
+  "Sign": "Please sign the message.",
+  "Sign Description": "BCharity uses this signature to verify that you're the owner of this address.",
+
   "Connect Wallet": "Connect your wallet.",
   "Connect Wallet Description": "Connect with one of our available wallet providers or create a new one.",
   "Browser Wallet": "Browser Wallet",
 
-  "Reject": "User rejected request"
+  "Reject": "User rejected request",
+
+  "Searching users": "Searching users",
+  "Following": "Following",
+  "Followers": "Followers",
+  "Follow": "Follow",
+  "Posts": "Posts",
+  "Comments": "Comments",
+  "Mirrors": "Mirrors",
+  "NFTs": "NFTs",
+  "No posts": "seems like not posted yet",
+
+  "Logged in as": "Logged in as",
+  "Your profile": "Your profile",
+  "Settings": "Settings",
+  "Logout": "Logout",
+  "Dark mode": "Dark mode",
+  "Light mode": "Light mode",
+
+  "Create group": "Create group",
+  "Create fundraise": "Create fundraise",
+  "Create profile": "Create profile",
+
+  "Contact message": "Message"
 }

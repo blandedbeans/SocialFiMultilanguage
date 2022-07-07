@@ -10,6 +10,7 @@ import splitSignature from '@lib/splitSignature'
 import { Contract, Signer } from 'ethers'
 import { Dispatch, FC, useState } from 'react'
 import toast from 'react-hot-toast'
+import { useTranslation } from 'react-i18next'
 import { CONNECT_WALLET, ERROR_MESSAGE } from 'src/constants'
 import { useAppPersistStore } from 'src/store/app'
 import { useSigner, useSignTypedData } from 'wagmi'
@@ -65,6 +66,7 @@ const Unfollow: FC<Props> = ({
     }
   })
   const { data: signer } = useSigner()
+  const { t } = useTranslation('common')
 
   const [createUnfollowTypedData, { loading: typedDataLoading }] = useMutation(
     CREATE_UNFOLLOW_TYPED_DATA_MUTATION,
@@ -104,7 +106,7 @@ const Unfollow: FC<Props> = ({
             }
             toast.success('Unfollowed successfully!')
           } catch {
-            toast.error('User rejected request')
+            toast.error('User rejected request') // keep as this for now, something's not working
           } finally {
             setWriteLoading(false)
           }

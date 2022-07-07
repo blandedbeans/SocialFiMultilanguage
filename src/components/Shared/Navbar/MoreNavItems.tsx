@@ -7,6 +7,7 @@ import {
 } from '@heroicons/react/outline'
 import clsx from 'clsx'
 import { FC, Fragment } from 'react'
+import { useTranslation } from 'react-i18next'
 import { IS_MAINNET } from 'src/constants'
 import { useAppPersistStore } from 'src/store/app'
 
@@ -14,6 +15,7 @@ import { NextLink } from './MenuItems'
 
 const MoreNavItems: FC = () => {
   const { currentUser } = useAppPersistStore()
+  const { t } = useTranslation('common')
 
   return (
     <Menu as="div">
@@ -29,7 +31,7 @@ const MoreNavItems: FC = () => {
               }
             )}
           >
-            More
+            {t('More')}
           </Menu.Button>
           <Transition
             show={open}
@@ -97,7 +99,7 @@ const MoreNavItems: FC = () => {
               >
                 <div className="flex items-center space-x-1.5">
                   <SupportIcon className="w-4 h-4" />
-                  <div>Contact</div>
+                  <div>{t('Contact Button')}</div>
                 </div>
               </Menu.Item>
             </Menu.Items>

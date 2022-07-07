@@ -90,7 +90,7 @@ const Search: FC<Props> = ({ hideDrodown = false }) => {
             {searchUsersLoading ? (
               <div className="py-2 px-4 space-y-2 text-sm font-bold text-center">
                 <Spinner size="sm" className="mx-auto" />
-                <div>Searching users</div>
+                <div>{t('Searching users')}</div>
               </div>
             ) : (
               <>

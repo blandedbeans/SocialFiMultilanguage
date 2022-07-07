@@ -14,6 +14,7 @@ import { CollectionIcon } from '@heroicons/react/outline'
 import Logger from '@lib/logger'
 import React, { FC, useState } from 'react'
 import { useInView } from 'react-cool-inview'
+import { useTranslation } from 'react-i18next'
 import { useAppPersistStore } from 'src/store/app'
 
 const PROFILE_FEED_QUERY = gql`
@@ -94,8 +95,9 @@ const Feed: FC<Props> = ({ profile, type }) => {
       )
     }
   })
-
+  const { t } = useTranslation('common')
   return (
+    // seems like not {type.toLowerCase()}ed yet!
     <>
       {loading && <PostsShimmer />}
       {data?.publications?.items?.length === 0 && (
@@ -103,7 +105,7 @@ const Feed: FC<Props> = ({ profile, type }) => {
           message={
             <div>
               <span className="mr-1 font-bold">@{profile?.handle}</span>
-              <span>seems like not {type.toLowerCase()}ed yet!</span>
+              <span>{t('No posts')}</span>
             </div>
           }
           icon={<CollectionIcon className="w-8 h-8 text-brand" />}

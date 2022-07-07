@@ -8,9 +8,9 @@ import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useAppPersistStore } from 'src/store/app'
 
-import TranslateButton from '../TranslateButton'
 import MenuItems from './MenuItems'
 import MoreNavItems from './MoreNavItems'
 import Search from './Search'
@@ -30,6 +30,7 @@ const Navbar: FC = () => {
     pollInterval: 3000,
     skip: !currentUser
   })
+  const { t } = useTranslation('common')
 
   interface NavItemProps {
     url: string
@@ -64,15 +65,18 @@ const Navbar: FC = () => {
 
     return (
       <>
-        <NavItem url="/" name="Home" current={pathname == '/'} />
+        <NavItem url="/" name={t('Home')} current={pathname == '/'} />
         <NavItem
           url="/explore"
-          name="Explore"
+          name={t('Explore')}
           current={pathname == '/explore'}
         />
-        <NavItem url="/groups" name="Groups" current={pathname == '/groups'} />
+        <NavItem
+          url="/groups"
+          name={t('Groups')}
+          current={pathname == '/groups'}
+        />
         <MoreNavItems />
-        <TranslateButton />
       </>
     )
   }

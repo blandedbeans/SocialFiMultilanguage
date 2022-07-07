@@ -3,6 +3,7 @@ import SEO from '@components/utils/SEO'
 import { HeartIcon } from '@heroicons/react/outline'
 import { useTheme } from 'next-themes'
 import React, { FC, Fragment, ReactNode } from 'react'
+import { useTranslation } from 'react-i18next'
 import { APP_NAME, STATIC_ASSETS } from 'src/constants'
 
 interface Props {
@@ -42,6 +43,7 @@ const Brand: FC<Props> = ({ name, logo, url, size, children }) => {
 }
 
 const Thanks: FC = () => {
+  const { t } = useTranslation('common')
   return (
     <>
       <SEO title={`Thanks • ${APP_NAME}`} />
@@ -51,10 +53,10 @@ const Thanks: FC = () => {
       >
         <div className="relative text-center">
           <div className="flex items-center space-x-2 text-3xl font-semibold text-white md:text-4xl">
-            <div>Thank you!</div>
+            <div>{t('Thanks Title')}</div>
             <HeartIcon className="w-7 h-7 text-pink-600" />
           </div>
-          <div className="text-white">for supporting our group</div>
+          <div className="text-white">{t('Thanks Subtitle')}</div>
         </div>
       </div>
       <div className="relative">
@@ -67,9 +69,7 @@ const Thanks: FC = () => {
                 url={`https://vercel.com/?utm_source=${APP_NAME}&utm_campaign=oss`}
                 size={40}
               >
-                Vercel combines the best developer experience with an obsessive
-                focus on end-user performance. Vercel platform enables frontend
-                teams to do their best work.
+                {t('Vercel')}
               </Brand>
               <Brand
                 name="Gitpod"
@@ -77,9 +77,7 @@ const Thanks: FC = () => {
                 url="https://gitpod.io"
                 size={50}
               >
-                Gitpod streamlines developer workflows by providing prebuilt,
-                collaborative developer environments in your browser - powered
-                by VS Code.
+                {t('Gitpod')}
               </Brand>
               <Brand
                 name="Imagekit"
@@ -87,9 +85,7 @@ const Thanks: FC = () => {
                 url="https://imagekit.io"
                 size={50}
               >
-                Image CDN with automatic optimization, real-time transformation,
-                and storage that you can integrate with existing setup in
-                minutes.
+                {t('Imagekit')}
               </Brand>
             </div>
           </div>

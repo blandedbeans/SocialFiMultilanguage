@@ -1,30 +1,31 @@
 import i18n from 'i18next'
+import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 
 import zhCN from '../public/locales/common_chZN.json'
 //import store from './utils/store'
 import en from '../public/locales/common_en.json'
+import store from './components/utils/store'
 
-i18n.use(initReactI18next).init({
-  fallbackLng: 'en',
-  preload: ['en'],
-  keySeparator: false,
-  interpolation: { escapeValue: false },
+i18n
+  .use(initReactI18next)
+  .use(LanguageDetector)
+  .init({
+    fallbackLng: 'en',
+    preload: ['en'],
+    keySeparator: false,
+    interpolation: { escapeValue: false },
 
-  lng: 'en',
-  resources: {
-    en: {
-      common: en
-    },
-    zhCN: {
-      common: zhCN
+    resources: {
+      en: {
+        common: en
+      },
+      zhCN: {
+        common: zhCN
+      }
     }
-  }
-})
+  })
 
+const language = store.get('i18nextLng') || 'en'
+i18n.changeLanguage(language)
 export default i18n
-// setting to english by default
-// i18nextLng is default create
-//const language = store.get('i18nextLng') || 'en'
-
-//i18next.changeLanguage(language)

@@ -28,7 +28,19 @@ export default function TranslateButton() {
               }
             )}
           >
-            {t('Change Language')}
+            <svg
+              className="h-7 w-7 text-indigo-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
+              />
+            </svg>
           </Menu.Button>
           <Transition
             show={open}
@@ -45,11 +57,15 @@ export default function TranslateButton() {
               className="absolute py-1 mt-2 w-52 bg-white rounded-xl border shadow-sm dark:bg-gray-900 focus:outline-none dark:border-gray-700/80"
             >
               <Menu.Item as="div" onClick={() => changeLanguage('en')}>
-                <div className="flex items-center space-x-1.5">English</div>
+                <div className="flex items-center space-x-1.5 hover:bg-gray-200">
+                  English
+                </div>
               </Menu.Item>
 
               <Menu.Item as="div" onClick={() => changeLanguage('zhCN')}>
-                <div className="flex items-center space-x-1.5">ZhongWen</div>
+                <div className="flex items-center space-x-1.5 hover:bg-gray-200">
+                  简体中文
+                </div>
               </Menu.Item>
             </Menu.Items>
           </Transition>

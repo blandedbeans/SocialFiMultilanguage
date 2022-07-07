@@ -59,12 +59,62 @@
 
   "Privacy Title": "隐私政策",
   "Last Updated": "2022年5月18日更新",
-  "Policy": "BCharity.xyz.('BCharity' 或 '我们'）尊重并保护用户（'您' 或 '用户'）的隐私。BCharity将根据本隐私政策（'政策'）收集和使用您在使用BCharity过程中产生的个人信息。",
+  "Policy": "BCharity.xyz.('BCharity' 或 '我们')尊重并保护用户('您' 或 '用户')的隐私。BCharity将根据本隐私政策('政策')收集和使用您在使用BCharity过程中产生的个人信息。",
   "Information Collection": "我们收集哪些信息",
   "Information Collection1": "我们通过一系列方式获得关于你的信息。",
   "Information Collection2": "你给我们的信息。我们向你收集的信息包括",
   "Information Collection3": "有关交易的网络信息。",
   "Information Collection4": "联系信息，如用户名和电子邮件。",
   "Information Collection5": "反馈和通信，例如您在回答调查时提供的信息，当您参与市场研究活动，报告服务问题，接受客户支持或以其他方式与我们通信。",
-  "Information Collection6": "Usage information, such as information about how you interact with us, and it is anonymous;"
+  "Information Collection6": "使用信息，例如关于你如何与我们互动的信息，而且是匿名的。",
+
+  "Information Use": "我们如何使用我们收集的信息",
+  "Information Use1": "我们收集信息的主要目的是为了帮助我们运营、提供、改进、定制、支持和营销我们的服务。",
+  "Information Use2": "提供您要求的服务和客户支持。",
+  "Information Use3": "解决纠纷，排除故障。",
+
+  "Updating Policy": "我们如何更新我们的政策",
+  "Updating Policy1": "我们保留不时在网上更新本政策的权利，新政策一旦公布，将立即取代旧政策。",
+  "Updating Policy2": "我们将通过更新本页面顶部的最后更新日期来通知您本政策的重大变化。",
+  "Updating Policy3": "特别是,如果您不接受修订后的政策,请立即停止对BCharity的使用。",
+  "Updating Policy4": "您继续使用我们的服务，即确认您接受我们经修订的隐私政策。如果您不同意我们经修订的隐私政策，您必须停止使用我们的服务。我们建议你经常访问这个页面，检查是否有变化。",
+
+  "Contact Us": "联系我们",
+  "Contact Us Description": "如果您对我们的隐私政策有任何疑问，请随时联系我们。",
+
+  "Lost": "哎呀，丢了‽。",
+  "Lost Description": "无法找到这个页面。",
+  "Go Home": "返家",
+
+  "Sign": "请在留言上签名。",
+  "Sign Description": "BCharity用这个签名来验证你是这个地址的主人。",
+
+  "Connect Wallet": "连接你的钱包。",
+  "Connect Wallet Description": "与我们现有的钱包供应商之一连接或创建一个新的钱包。",
+  "Browser Wallet": "浏览器钱包",
+
+  "Reject": "用户拒绝请求",
+
+  "Searching users": "搜索用户",
+  "Following": "你关注的人",
+  "Followers": "追随者",
+  "Follow": "遵循",
+  "Posts": "帖子",
+  "Comments": "评论",
+  "Mirrors": "镜子",
+  "NFTs": "NFTs",
+  "No posts": "好像还没有发布",
+
+  "Logged in as": "登录为",
+  "Your profile": "你的资料",
+  "Settings": "设置",
+  "Logout": "登出",
+  "Dark mode": "黑暗模式",
+  "Light mode": "灯光模式",
+
+  "Create group": "创建群组",
+  "Create fundraise": "创建筹款活动",
+  "Create profile": "创建简介",
+
+  "Contact message": "信息"
 }
