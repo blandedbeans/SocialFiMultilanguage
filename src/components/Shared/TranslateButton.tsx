@@ -57,13 +57,13 @@ export default function TranslateButton() {
               className="absolute py-1 mt-2 w-52 bg-white rounded-xl border shadow-sm dark:bg-gray-900 focus:outline-none dark:border-gray-700/80"
             >
               <Menu.Item as="div" onClick={() => changeLanguage('en')}>
-                <div className="flex items-center space-x-1.5 hover:bg-gray-200">
+                <div className="flex items-center space-x-1.5 hover:bg-gray-200 cursor-pointer">
                   English
                 </div>
               </Menu.Item>
 
               <Menu.Item as="div" onClick={() => changeLanguage('zhCN')}>
-                <div className="flex items-center space-x-1.5 hover:bg-gray-200">
+                <div className="flex items-center space-x-1.5 hover:bg-gray-200 cursor-pointer">
                   简体中文
                 </div>
               </Menu.Item>
