@@ -28,6 +28,7 @@ import uploadAssetsToIPFS from '@lib/uploadAssetsToIPFS'
 import uploadToIPFS from '@lib/uploadToIPFS'
 import React, { ChangeEvent, FC, useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
+import { useTranslation } from 'react-i18next'
 import {
   APP_NAME,
   CONNECT_WALLET,
@@ -95,6 +96,7 @@ interface Props {
 }
 
 const Profile: FC<Props> = ({ profile }) => {
+  const { t } = useTranslation('common')
   const { userSigNonce, setUserSigNonce } = useAppStore()
   const { isAuthenticated, currentUser } = useAppPersistStore()
   const [beta, setBeta] = useState<boolean>(isBeta(profile))
@@ -293,30 +295,30 @@ const Profile: FC<Props> = ({ profile }) => {
           {error && (
             <ErrorMessage
               className="mb-3"
-              title="Transaction failed!"
+              title={t('Transaction Failed!')}
               error={error}
             />
           )}
           <Input
-            label="Profile Id"
+            label={t('Profile Id')}
             type="text"
             value={currentUser?.id}
             disabled
           />
           <Input
-            label="Name"
+            label={t('Name')}
             type="text"
             placeholder="Gavin"
             {...form.register('name')}
           />
           <Input
-            label="Location"
+            label={t('Location')}
             type="text"
-            placeholder="Miami"
+            placeholder={t('Location placeholder')}
             {...form.register('location')}
           />
           <Input
-            label="Website"
+            label={t('Website')}
             type="text"
             placeholder="https://hooli.com"
             {...form.register('website')}
@@ -329,12 +331,12 @@ const Profile: FC<Props> = ({ profile }) => {
             {...form.register('twitter')}
           />
           <TextArea
-            label="Bio"
-            placeholder="Tell us something about you!"
+            label={t('Bio')}
+            placeholder={t('Bio placeholder')}
             {...form.register('bio')}
           />
           <div className="space-y-1.5">
-            <div className="label">Cover</div>
+            <div className="label">{t('Cover')}</div>
             <div className="space-y-3">
               {cover && (
                 <div>
@@ -359,20 +361,17 @@ const Profile: FC<Props> = ({ profile }) => {
             <div className="label">Beta</div>
             <div className="flex items-center space-x-2">
               <Toggle on={beta} setOn={setBeta} />
-              <div>Enroll to {APP_NAME} Beta</div>
+              <div>{t('Enroll beta')}</div>
             </div>
           </div>
           <div className="pt-4 space-y-2">
             <div className="flex items-center space-x-2 label">
               <img className="w-5 h-5" src="/pride.svg" alt="Pride Logo" />
-              <span>Celebrate pride every day</span>
+              <span>{t('Celebrate pride')}</span>
             </div>
             <div className="flex items-center space-x-2">
               <Toggle on={pride} setOn={setPride} />
-              <div>
-                Turn this on to show your pride and turn the {APP_NAME} logo
-                rainbow every day.
-              </div>
+              <div>{t('Pride switch')}</div>
             </div>
           </div>
           <div className="flex flex-col space-y-2">
@@ -398,7 +397,7 @@ const Profile: FC<Props> = ({ profile }) => {
                 )
               }
             >
-              Save
+              {t('Save')}
             </Button>
             {writeData?.hash ?? broadcastData?.broadcast?.txHash ? (
               <IndexStatus

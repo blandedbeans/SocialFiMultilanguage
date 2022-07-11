@@ -24,6 +24,7 @@
   "Copyright": "© BCharity由ECSSEN(注册慈善机构)提供支持。)",
 
   "Search": "搜索...",
+  "No matching users": "没有匹配的用户",
 
   "Home": "首页",
   "Explore": "探索",
@@ -109,11 +110,12 @@
   "Who to follow": "关注谁",
 
   "Logged in as": "登录为",
-  "Your profile": "你的资料",
+  "Your Profile": "你的资料",
   "Settings": "设置",
   "Logout": "登出",
   "Dark mode": "黑暗模式",
   "Light mode": "灯光模式",
+  "Switch": "切换到",
 
   "Create group": "创建群组",
   "Create fundraise": "创建筹款活动",
@@ -144,5 +146,158 @@
 
   "Create profile description": "创建新的分散的配置文件",
   "Handle": "处理",
-  "Signup": "报名"
+  "Signup": "报名",
+
+  "Set default profile": "设置默认配置文件",
+  "You have owned": "你已经拥有",
+  "Don't have default": "但你没有一个默认账户。",
+  "Set default": "在此设置默认配置文件",
+
+  "You're on a": "你在一个",
+  "Day streak": "连续多日",
+
+  "Profile": "形象",
+  "Account": "帐户",
+  "Allowance": "补贴",
+  "Danger Zone": "危险区",
+
+  "Transaction Failed": "交易失败",
+  "Profile Id": "个人身份",
+  "Name": "命名",
+  "Location": "地点",
+  "Location placeholder": "北京",
+  "Website": "网站",
+  "Bio": "纪要",
+  "Bio placeholder": "告诉我们一些关于你的事情!",
+  "Cover": "封面",
+  "Enroll beta": "报名参加BCarity Beta",
+  "Celebrate pride": "每天庆祝自豪感",
+  "Pride switch": "打开这个以显示你的自豪感,每天把BCharity的标志变成彩虹。",
+  "Save": "拯救",
+  "Upload avatar": "上传头像",
+  "NFT Avatar": "NFT简介图片",
+  "Chain": "链",
+  "Contract address": "合同地址",
+  "Token Id": "代币标识",
+
+  "Your default profile": "你的默认配置文件",
+  "No default profile": "你没有设置任何默认的配置文件!",
+  "Select default profile": "选择默认配置文件",
+  "Select default profile description": "选择你的默认账户有助于在整个BCharity显示所选的资料,你可以随时改变你的默认资料。",
+  "What else": "你还应该知道什么",
+  "What else1": "只有默认的资料会在整个BCharity中可见,例如通知、关注等。",
+  "What else2": "你可以在这里随时改变默认配置文件。",
+  "Select profile": "选择概况",
+  "Set super follow title": "设置超级跟随",
+  "Super follow description": "设置超级关注使用户花费加密货币来关注你，这是一个很好的赚取方式，你可以随时改变金额和货币或禁用/启用它。",
+  "Follow amount": "关注金额",
+  "Funds recipient": "资金接受者",
+  "Set super follow": "设置超级跟随",
+  "Verified title": "已验证",
+  "Is verified1": "没有。",
+  "Is verified2": "是的。",
+  "Verify request": "要求核查",
+  "Twitter cross post": "交叉发布到Twitter",
+  "Twitter cross post description": "反映会自动推送BCharity的新文章,所以你终于可以逃离鸟类网站了。",
+  "Setup": "现在设置",
+  "Disable super follow": "禁用超级跟随",
+  "Update super follow": "更新超级跟随",
+  "Loading super follow settings": "加载超级跟踪设置",
+
+  "Allow/revoke modules": "允许/撤销模块",
+  "Allowance description": "为了使用收集功能，你需要允许你使用的模块，你可以随时允许和撤销该模块。",
+  "Allowance data": "正在加载津贴数据!",
+  "Allow": "允许",
+  "Limited fee collect": "收费有限",
+  "Fee collect": "收费",
+  "Fee collect description": "收费模块允许任何追随者收集相关的出版物，只要他们支付由发帖人设定的费用。",
+  "Limited time fee collect": "有限时间的饲料收集",
+  "Limited fee collect description": "有限费用收集模块允许任何追随者收集相关的出版物，只要他们支付一定的费用，并达到一个特定的极限分值。",
+  "Timed fee collect": "收费时间",
+  "Timed fee collect description": "定时收费模块允许任何追随者收集相关的出版物,只要他们支付一定的费用,在特定的时间限制内。目前白名单上的定时收费模块只有24小时的时间限制,以减少气体的使用并优化效率。",
+  "Free collect": "免费收集",
+  "Free collect description": "自由收集模块允许任何资料收集该模块所附的出版物。",
+  "Revert collect": "回归收集",
+  "Revert collect description": "逆转收集模块导致对某一特定出版物的所有收集行动失败，从而使该出版物无法被收集。",
+  "Fee follow": "费用遵循",
+  "Fee follow description": "收费关注模块只允许地址关注一个特定的个人资料，只要他们支付个人资料所有者指定的费用。用户可以设置需要支付的货币和金额。",
+  "Follower only reference": "仅供追随者参考",
+  "Follower only reference description": "只有追随者的参考模块确保只有一个配置文件只允许对内容进行镜像或评论。",
+  "Warning": "警告",
+  "Handle with care": "小心处理!",
+  "Warning info": "请确保，如果你允许这个模块，你将自动被检测到的金额，如果你收集，资金和超级跟踪。",
+  "Revoke": "撤销",
+
+  "Deactivate account": "停用账户",
+  "Delete info": "删除你的账户是永久性的。你的所有数据将立即被抹去，你将无法取回。",
+  "Delete info1": "如果你的BCharity账户被意外或错误地删除,你不能恢复它。",
+  "Delete info2": "一些账户信息可能仍然可以在搜索引擎中找到，如谷歌或必应。",
+  "Delete info3": "删除账户后，你的@handle将立即被释放。",
+  "Delete your account": "删除你的账户",
+  "Delete load": "删除...",
+  "Delete group": "删除群组",
+  "Delete confirmation": "你确定你要删除吗？",
+
+  "First comment": "成为第一个发表评论的人!",
+  "Loading settings": "加载设置",
+
+  "Tell something cool": "讲一些很酷的事情!",
+  "Comment": "评论",
+  "Post": "帖子",
+  "Send": "发送",
+  "Sign action": "签名",
+  "Uploading": "上传至IPFS",
+  "Generating": "生成",
+  "Empty": "评论不应该是空的!",
+
+  "Doesnt follow": "不跟随任何人",
+
+  "Explore web": "探索 - BCharity",
+  "Web description": "探索BCharity小组中的顶级评论、收集和最新出版物。",
+
+  "Days ago": "天前",
+
+  "Back": "返回",
+  "Mirror description": "当有人镜像该出版物时，他们将因推荐该出版物而获得一些百分比的奖励。",
+  "Permission": "许可",
+  "Everyone": "每个人都可以收集",
+  "Followers only": "只有追随者才能收集",
+
+  "No NFT": "似乎没有Nfts!",
+
+  "No followers": "还没有任何追随者",
+
+  "Mirrored": "反映了",
+
+  "No inbox": "收件箱为零!",
+
+  "Delete confirm": "你确定你要删除吗？",
+  "Delete": "删除",
+
+  "Report post": "举报帖",
+
+  "Collects": "收集",
+  "Price": "价格",
+  "Funds raised": "筹集的资金",
+  "Funds goal": "资金目标",
+
+  "Publications": "著作",
+  "Profiles": "剖析",
+
+  "Account creation": "帐户创建中，请等待",
+  "Account created": "帐户创建成功",
+  "Go to profile": "转到个人资料",
+
+  "Signup Bcharity": "注册加入B-Charity",
+
+  "Joined": "加入",
+  "Launched group": "推出了一个新的团体",
+  "Show more": "显示更多",
+
+  "Report header": "报告出版",
+  "Report description": "帮助我们了解这个问题。这份出版物是怎么回事？",
+  "Publication reported": "发表报告成功!",
+  "Report": "报告",
+  "Report description1": "描述",
+  "Report placeholder": "告诉我们一些关于社区的情况!"
 }

@@ -28,7 +28,7 @@ const Followerings: FC<Props> = ({ followersCount, profile }) => {
         <div className="text-xl">
           {humanize(profile?.stats?.totalFollowing)}
         </div>
-        <div className="text-gray-500">Following</div>
+        <div className="text-gray-500">{t('Following')}</div>
       </button>
       <button
         type="button"
@@ -37,7 +37,7 @@ const Followerings: FC<Props> = ({ followersCount, profile }) => {
         data-test="profile-followers"
       >
         <div className="text-xl">{humanize(followersCount)}</div>
-        <div className="text-gray-500">Followers</div>
+        <div className="text-gray-500">{t('Followers')}</div>
       </button>
       <Modal
         title={t('Following')}

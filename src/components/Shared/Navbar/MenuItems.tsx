@@ -154,7 +154,7 @@ const MenuItems: FC<Props> = ({ pingData }) => {
                     <div className="overflow-auto m-2 max-h-36 no-scrollbar">
                       <div className="flex items-center px-4 pt-1 pb-2 space-x-1.5 text-sm font-bold text-gray-500">
                         <SwitchHorizontalIcon className="w-4 h-4" />
-                        <div>Switch to</div>
+                        <div>{t('Switch')}</div>
                       </div>
                       {profiles.map((profile: Profile, index: number) => (
                         <div

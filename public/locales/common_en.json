@@ -24,6 +24,7 @@
   "Copyright": "© BCharity powered by ECSSEN (Registered Charity)",
 
   "Search": "Search...",
+  "No matching users": "No matching users",
 
   "Home": "Home",
   "Explore": "Explore",
@@ -110,11 +111,12 @@
   "Who to follow": "Who to follow",
 
   "Logged in as": "Logged in as",
-  "Your profile": "Your profile",
+  "Your Profile": "Your profile",
   "Settings": "Settings",
   "Logout": "Logout",
   "Dark mode": "Dark mode",
   "Light mode": "Light mode",
+  "Switch": "Switch to",
 
   "Create group": "Create group",
   "Create fundraise": "Create fundraise",
@@ -147,5 +149,160 @@
 
   "Create profile description": "Create new decentralized profile",
   "Handle": "Handle",
-  "Signup": "Signup"
+  "Signup": "Signup",
+
+  "Set default profile": "Set default profile",
+  "You have owned": "You have owned ",
+  "Don't have default": "but you don't have a default account.",
+  "Set default": "Set default profile here",
+
+  "You're on a": "You're on a",
+  "Day streak": "day streak",
+
+  "Profile": "Profile",
+  "Account": "Account",
+  "Allowance": "Allowance",
+  "Danger Zone": "Danger Zone",
+
+  "Transaction Failed": "Transaction failed",
+  "Profile Id": "Profile Id",
+  "Name": "Name",
+  "Location": "Location",
+  "Location placeholder": "Miami",
+  "Website": "Website",
+  "Bio": "Bio",
+  "Bio placeholder": "Tell us something about you!",
+  "Cover": "Cover",
+  "Enroll beta": "Enroll to BCharity Beta",
+  "Celebrate pride": "Celebrate pride every day",
+  "Pride switch": "Turn this on to show your pride and turn the BCharity logo rainbow every day.",
+  "Save": "Save",
+  "Upload avatar": "Upload avatar",
+  "NFT Avatar": "NFT Avatar",
+  "Chain": "Chain",
+  "Contract address": "Contract address",
+  "Token Id": "Token Id",
+
+  "Your default profile": "Your default profile",
+  "No default profile": "You don't have any default profile set!",
+  "Select default profile": "Select default profile",
+  "Select default profile description": "Selecting your default account helps to display the selected profile across BCharity, you can change your default profile anytime.",
+  "What else": "What else you should know",
+  "What else1": "Only the default profile will be visible across the BCharity, example notifications, follow etc.",
+  "What else2": "You can change default profile anytime here.",
+  "Select profile": "Select profile",
+  "Set super follow title": "Set super follow",
+  "Super follow description": "Setting super follow makes users spend crypto to follow you, and it’s a good way to earn it, you can change the amount and currency or disable/enable it anytime.",
+  "Follow amount": "Follow amount",
+  "Funds recipient": "Funds recipient",
+  "Set super follow": "Set super follow",
+  "Verified title": "Verified",
+  "Is verified1": "No.",
+  "Is verified2": "Yes.",
+  "Verify request": "Request verification",
+  "Twitter cross post": "Cross post to Twitter",
+  "Twitter cross post description": "Reflect will auto-tweet new BCharity posts, so you can finally escape the bird site.",
+  "Setup": "Setup now",
+  "Disable super follow": "Disable Super follow",
+  "Update super follow": "Update Super follow",
+  "Loading super follow settings": "Loading super follow settings",
+  "Super follow": "Super Follow",
+
+  "Allow/revoke modules": "Allow / Revoke modules",
+  "Allowance description": "In order to use collect feature you need to allow the module you use, you can allow and revoke the module anytime.",
+  "Allowance data": "Loading allowance data!",
+  "Allow": "Allow",
+  "Limited fee collect": "Limited Fee Collect",
+  "Limited fee collect description": "The Limited Fee Collect Module allows for anyfollower to collect the associated publication,provided they pay a fee, up to a specific limit of mints",
+  "Fee collect": "Fee Collect",
+  "Fee collect description": "The Fee Collect Module allows for any follower to collect the associated publication provided they pay a fee set by the poster",
+  "Limited time fee collect": "Limited Time Fee Collect",
+  "Limited time fee collect description": "The Limited Fee Collect Module allows for any follower to collect the associated publication, provided they pay a fee, up to a specific limit of mints.",
+  "Timed fee collect": "Time Fee Collect",
+  "Timed fee collect description": "The Timed Fee Collect Module allows for any follower to collect the associated publication, provided they pay a fee, up to a specific time limit. The present whitelisted Timed Fee Collect module only has a 24-hour time limit to reduce gas usage and optimize efficiency.",
+  "Free collect": "Free Collect",
+  "Free collect description": "The Free Collect Module allows any profile to collect the publication this module is attached to.",
+  "Revert collect": "Revert Collect",
+  "Revert collect description": "The Revert Collect Module causes all collect actions on a given publication to fail, thus making the publication uncollectible.",
+  "Fee follow": "Fee Follow",
+  "Fee follow description": "The Fee Follow Module only allows addresses to follow a given profile, so long as they pay a fee specified by the profile owner. Users can set the currency and amount required to be paid.",
+  "Follower only reference": "Follower Only Reference",
+  "Follower only reference description": "The Follower Only Reference Module ensures that only a profile is only allowed to mirror or comment on content.",
+  "Warning": "Warning",
+  "Handle with care": "Handle with care!",
+  "Warning info": "Please make sure that if you allow this module you will automatically be detected with the amount if you collect, fund and super follow.",
+  "Revoke": "Revoke",
+
+  "Deactivate account": "This will delete your account",
+  "Delete info": "Deleting your account is permanent. All your data will be wiped out immediately and you won’t be able to get it back.",
+  "Delete info1": "You cannot restore your BCharity account if it was accidentally or wrongfully deleted.",
+  "Delete info2": "Some account information may still be available in search engines, such as Google or Bing.",
+  "Delete info3": "Your @handle will be released immediately after deleting the account.",
+  "Delete your account": "Delete your account",
+  "Delete load": "Deleting...",
+  "Delete group": "Delete Group",
+  "Delete confirmation": "Are you sure you want to delete?",
+
+  "First comment": "Be the first one to comment!",
+  "Loading settings": "Loading settings",
+
+  "Tell something cool": "Tell something cool!",
+  "Comment": "Comment",
+  "Post": "Post",
+  "Send": "Send",
+  "Sign action": "Sign",
+  "Uploading": "Uploading to IPFS",
+  "Generating": "Generating",
+  "Empty": "Comment should not be empty!",
+
+  "Doesnt follow": "doesn’t follow anyone.",
+
+  "Explore web": "Explore • BCharity",
+  "Web description": "Explore top commented, collected and latest publications in the BCharity group.",
+
+  "Days ago": "days ago",
+
+  "Back": "Back",
+  "Mirror description": "When someone mirrors the publication they will get some reward in percentage for referring it.",
+  "Permission": "Permission",
+  "Everyone": "Everyone can collect",
+  "Followers only": "Only followers can collect",
+
+  "No NFT": "seems like have no nfts!",
+
+  "No followers": "doesn't have any followers yet",
+
+  "Mirrored": "mirrored the ",
+
+  "No inbox": "Inbox zero!",
+
+  "Delete confirm": "Are you sure you want to delete?",
+  "Delete": "Delete",
+
+  "Report post": "Report Post",
+
+  "Collects": "Collects",
+  "Price": "Price",
+  "Funds raised": "Funds Raised",
+  "Funds goal": "Funds Goal",
+
+  "Publications": "Publications",
+  "Profiles": "Profiles",
+
+  "Account creation": "Account creation in progress, please wait!",
+  "Account created": "Account created successfully",
+  "Go to profile": "Go to profile",
+
+  "Signup Bcharity": "Signup to B-Charity",
+
+  "Joined": "Joined",
+  "Launched group": "Launched a new group",
+  "Show more": "Show more",
+
+  "Report header": "Report publication",
+  "Report description": "Help us understand the problem. What is going on with this publication?",
+  "Publication reported": "Publication reported successfully!",
+  "Report": "Report",
+  "Report description1": "Description",
+  "Report placeholder": "Tell us something about the community!"
 }

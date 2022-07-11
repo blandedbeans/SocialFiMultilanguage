@@ -31,6 +31,7 @@ import uploadToIPFS from '@lib/uploadToIPFS'
 import dynamic from 'next/dynamic'
 import { FC, useState } from 'react'
 import toast from 'react-hot-toast'
+import { useTranslation } from 'react-i18next'
 import {
   APP_NAME,
   CONNECT_WALLET,
@@ -108,6 +109,7 @@ interface Props {
 }
 
 const NewComment: FC<Props> = ({ post, type }) => {
+  const { t } = useTranslation('common')
   const { userSigNonce, setUserSigNonce } = useAppStore()
   const { isAuthenticated, currentUser } = useAppPersistStore()
   const { persistedPublication, setPersistedPublication } =
@@ -225,7 +227,7 @@ const NewComment: FC<Props> = ({ post, type }) => {
   const createComment = async () => {
     if (!isAuthenticated) return toast.error(CONNECT_WALLET)
     if (persistedPublication.length === 0 && attachments.length === 0) {
-      return setCommentContentError('Comment should not be empty!')
+      return setCommentContentError(t('Empty'))
     }
 
     setCommentContentError('')
@@ -295,7 +297,7 @@ const NewComment: FC<Props> = ({ post, type }) => {
           {error && (
             <ErrorMessage
               className="mb-3"
-              title="Transaction failed!"
+              title={t('Transaction Failed')}
               error={error}
             />
           )}
@@ -307,7 +309,7 @@ const NewComment: FC<Props> = ({ post, type }) => {
             <MentionTextArea
               error={commentContentError}
               setError={setCommentContentError}
-              placeholder="Tell something cool!"
+              placeholder={t('Tell something cool')}
             />
           )}
           <div className="block items-center sm:flex">
@@ -365,16 +367,18 @@ const NewComment: FC<Props> = ({ post, type }) => {
                 onClick={createComment}
               >
                 {isUploading
-                  ? 'Uploading to IPFS'
+                  ? t('Uploading')
                   : typedDataLoading
-                  ? `Generating ${type === 'comment' ? 'Comment' : 'Post'}`
+                  ? `${t('Generating')} ${
+                      type === 'comment' ? 'Comment' : 'Post'
+                    }`
                   : signLoading
-                  ? 'Sign'
+                  ? t('Sign action')
                   : writeLoading || broadcastLoading
-                  ? 'Send'
+                  ? t('Send')
                   : type === 'comment'
-                  ? 'Comment'
-                  : 'Post'}
+                  ? t('Comment')
+                  : t('Post')}
               </Button>
             </div>
           </div>

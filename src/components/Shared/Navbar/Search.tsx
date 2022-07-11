@@ -110,7 +110,7 @@ const Search: FC<Props> = ({ hideDrodown = false }) => {
                   </div>
                 ))}
                 {searchUsersData?.search?.items?.length === 0 && (
-                  <div className="py-2 px-4">No matching users</div>
+                  <div className="py-2 px-4">{t('No matching users')}</div>
                 )}
               </>
             )}

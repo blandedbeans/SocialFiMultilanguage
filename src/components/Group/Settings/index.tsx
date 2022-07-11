@@ -6,6 +6,7 @@ import { Group } from '@generated/bcharitytypes'
 import { TrashIcon } from '@heroicons/react/outline'
 import { useRouter } from 'next/router'
 import React, { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface Props {
   group: Group
@@ -18,31 +19,28 @@ const Settings: FC<Props> = ({ group }) => {
       push('/')
     }
   })
-
+  const { t } = useTranslation('common')
   return (
     <div className="p-5 space-y-5">
       <div>
         <WarningMessage message="Only delete settings is available now, you can't edit any part of the group right now!" />
       </div>
       <div className="space-y-2">
-        <div className="font-bold text-red-500">Danger Zone</div>
-        <p>
-          Deleting your group will delete only from indexers and not from the
-          blockchain.
-        </p>
+        <div className="font-bold text-red-500">{t('Danger Zone')}</div>
+        <p>{t('Delete info')}</p>
         <Button
           className="!mt-5"
           icon={<TrashIcon className="w-5 h-5" />}
           variant="danger"
           onClick={() => {
-            if (confirm('Are you sure you want to delete?')) {
+            if (confirm(t('Delete confirmation'))) {
               hidePost({
                 variables: { request: { publicationId: group?.id } }
               })
             }
           }}
         >
-          Delete Group
+          {t('Delete group')}
         </Button>
       </div>
     </div>
