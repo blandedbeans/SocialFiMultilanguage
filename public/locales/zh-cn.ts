@@ -1,3 +1,5 @@
+import dayjs from 'dayjs'
+
 const locale = {
   name: 'zhCN',
   weekdays: '星期日_星期一_星期二_星期三_星期四_星期五_星期六'.split('_'),
@@ -39,4 +41,5 @@ const locale = {
   }
 }
 
+dayjs.locale('zhCN')
 export default locale

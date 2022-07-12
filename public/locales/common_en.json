@@ -304,5 +304,19 @@
   "Publication reported": "Publication reported successfully!",
   "Report": "Report",
   "Report description1": "Description",
-  "Report placeholder": "Tell us something about the community!"
+  "Report placeholder": "Tell us something about the community!",
+
+  "No groups found": "No groups found!",
+  "Something went wrong": "Looks like something went wrong!",
+  "Something went wrong description": "We track these errors automatically, but if the problem persists feel free to contact us. In the meantime, try refreshing.",
+
+  "Group creation load": "Group creation in progress, please wait!",
+  "Group created successfully": "Group created successfully!",
+  "Go to group": "Go to group",
+
+  "Lens signin": "Sign-In with Lens",
+  "Fundraise creation": "Fundraise creation in progress, please wait!",
+  "Fundraise created successfully": "Fundraise created successfully!",
+
+  "Alphanumeric error": "Handle should only contain alphanumeric characters"
 }

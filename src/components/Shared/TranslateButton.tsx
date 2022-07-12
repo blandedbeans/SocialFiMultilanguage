@@ -1,19 +1,27 @@
+import 'dayjs/locale/en'
+import 'dayjs/locale/zh-cn'
+
 import { Menu, Transition } from '@headlessui/react'
 import clsx from 'clsx'
+import dayjs from 'dayjs'
 import React from 'react'
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import i18n from '../../i18n'
+import store from '../utils/store'
 
-//import common_en from '../../translations/en/common.json'
-//import common_zhCN from '../../translations/zh-CN/common.json'
 export default function TranslateButton() {
   const changeLanguage = (lng: string) => {
+    console.log(dayjs.locale())
     i18n.changeLanguage(lng)
     console.log(i18n.language)
   }
   const { t } = useTranslation('common')
+  useEffect(() => {
+    dayjs.locale(store.get('localeLng'))
+    //Runs on every render
+  })
   return (
     <Menu as="div">
       {({ open }) => (
@@ -56,13 +64,27 @@ export default function TranslateButton() {
               static
               className="absolute py-1 mt-2 w-52 bg-white rounded-xl border shadow-sm dark:bg-gray-900 focus:outline-none dark:border-gray-700/80"
             >
-              <Menu.Item as="div" onClick={() => changeLanguage('en')}>
+              <Menu.Item
+                as="div"
+                onClick={() => {
+                  store.set('localeLng', 'en')
+                  changeLanguage('en')
+                  dayjs.locale(store.get('localeLng'))
+                }}
+              >
                 <div className="flex items-center space-x-1.5 hover:bg-gray-200 cursor-pointer">
                   English
                 </div>
               </Menu.Item>
 
-              <Menu.Item as="div" onClick={() => changeLanguage('zhCN')}>
+              <Menu.Item
+                as="div"
+                onClick={() => {
+                  store.set('localeLng', 'zh-cn')
+                  changeLanguage('zhCN')
+                  dayjs.locale(store.get('localeLng'))
+                }}
+              >
                 <div className="flex items-center space-x-1.5 hover:bg-gray-200 cursor-pointer">
                   简体中文
                 </div>

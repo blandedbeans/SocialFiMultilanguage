@@ -299,5 +299,19 @@
   "Publication reported": "发表报告成功!",
   "Report": "报告",
   "Report description1": "描述",
-  "Report placeholder": "告诉我们一些关于社区的情况!"
+  "Report placeholder": "告诉我们一些关于社区的情况!",
+
+  "No groups found": "未找到任何群组!",
+  "Something went wrong": "好像出了什么问题!",
+  "Something went wrong description": "我们会自动跟踪这些错误，但如果问题仍然存在，请随时与我们联系。与此同时，尝试刷新。",
+
+  "Group creation load": "正在创建群组，请稍候！",
+  "Group created successfully": "群组创建成功!",
+  "Go to group": "前往群组",
+
+  "Lens signin": "使用镜头登录",
+  "Fundraise creation": "筹款活动正在进行中，请稍候！",
+  "Fundraise created successfully": "筹款活动创建成功！",
+
+  "Alphanumeric error": "Handle should only contain alphanumeric characters"
 }

@@ -275,8 +275,8 @@ const Create: NextPage = () => {
               txHash={
                 data?.hash ? data?.hash : broadcastData?.broadcast?.txHash
               }
-              indexing="Fundraise creation in progress, please wait!"
-              indexed="Fundraise created successfully"
+              indexing={t('Fundraise creation')}
+              indexed={t('Fundraise created successfully')}
               type="fundraise"
               urlPrefix="posts"
             />

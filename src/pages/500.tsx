@@ -10,12 +10,9 @@ export default function Custom500() {
     <div className="flex-col page-center">
       <SEO title="500 • BCharity" />
       <div className="py-10 text-center">
-        <h1 className="mb-4 text-3xl font-bold">
-          Looks like something went wrong!
-        </h1>
+        <h1 className="mb-4 text-3xl font-bold">{t('Something went wrong')}</h1>
         <div className="mb-4 text-gray-500">
-          We track these errors automatically, but if the problem persists feel
-          free to contact us. In the meantime, try refreshing.
+          {t('Something went wrong description')}
         </div>
         <Link href="/">
           <a href="/">

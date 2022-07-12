@@ -220,8 +220,8 @@ const Create: NextPage = () => {
               txHash={
                 data?.hash ? data?.hash : broadcastData?.broadcast?.txHash
               }
-              indexing="Group creation in progress, please wait!"
-              indexed="Group created successfully"
+              indexing={t('Group creation load')}
+              indexed={t('Group created successfully')}
               type="group"
               urlPrefix="groups"
             />
