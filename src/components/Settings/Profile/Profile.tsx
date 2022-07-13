@@ -73,24 +73,6 @@ const CREATE_SET_PROFILE_METADATA_TYPED_DATA_MUTATION = gql`
   }
 `
 
-const editProfileSchema = object({
-  name: string()
-    .min(2, { message: 'Name should have atleast 2 characters' })
-    .max(100, { message: 'Name should not exceed 100 characters' }),
-  location: string()
-    .max(100, { message: 'Location should not exceed 100 characters' })
-    .nullable(),
-  website: optional(
-    string().max(100, { message: 'Website should not exceed 100 characters' })
-  ),
-  twitter: string()
-    .max(100, { message: 'Twitter should not exceed 100 characters' })
-    .nullable(),
-  bio: string()
-    .max(260, { message: 'Bio should not exceed 260 characters' })
-    .nullable()
-})
-
 interface Props {
   profile: Profile & { coverPicture: MediaSet }
 }
@@ -203,6 +185,22 @@ const Profile: FC<Props> = ({ profile }) => {
       setUploading(false)
     }
   }
+  const editProfileSchema = object({
+    // translate
+    name: string()
+      .min(2, { message: t('At least 2 characters') })
+      .max(100, { message: t('Exceeds 100 characters') }),
+    location: string()
+      .max(100, { message: t('Location exceeds') })
+      .nullable(),
+    website: optional(string().max(100, { message: t('Website exceeds') })),
+    twitter: string()
+      .max(100, { message: t('Twitter exceeds') })
+      .nullable(),
+    bio: string()
+      .max(260, { message: t('Bio exceeds') })
+      .nullable()
+  })
 
   const form = useZodForm({
     schema: editProfileSchema,

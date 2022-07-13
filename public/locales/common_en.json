@@ -318,5 +318,11 @@
   "Fundraise creation": "Fundraise creation in progress, please wait!",
   "Fundraise created successfully": "Fundraise created successfully!",
 
-  "Alphanumeric error": "Handle should only contain alphanumeric characters"
+  "Alphanumeric error": "Handle should only contain alphanumeric characters",
+  "At least 2 characters": "Name should have at least 2 characters",
+  "Exceeds 100 characters": "Name should not exceed 100 characters",
+  "Location exceeds": "Location should not exceed 100 characters",
+  "Website exceeds": "Website should not exceed 100 characters",
+  "Twitter exceeds": "Twitter should not exceed 100 characters",
+  "Bio exceeds": "Bio should not exceed 260 characters"
 }
