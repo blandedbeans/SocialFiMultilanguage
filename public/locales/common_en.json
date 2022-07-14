@@ -324,5 +324,7 @@
   "Location exceeds": "Location should not exceed 100 characters",
   "Website exceeds": "Website should not exceed 100 characters",
   "Twitter exceeds": "Twitter should not exceed 100 characters",
-  "Bio exceeds": "Bio should not exceed 260 characters"
+  "Bio exceeds": "Bio should not exceed 260 characters",
+
+  "Select file": "Select file"
 }
