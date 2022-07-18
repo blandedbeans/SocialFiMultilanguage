@@ -356,7 +356,7 @@ const Profile: FC<Props> = ({ profile }) => {
             </div>
           </div>
           <div className="space-y-2">
-            <div className="label">Beta</div>
+            <div className="label">{t('Beta')}</div>
             <div className="flex items-center space-x-2">
               <Toggle on={beta} setOn={setBeta} />
               <div>{t('Enroll beta')}</div>

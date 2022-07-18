@@ -34,7 +34,7 @@ const Footer: FC = () => {
         target="_blank"
         rel="noreferrer noopener"
       >
-        Twitter
+        {t('Twitter')}
       </a>
       <a
         href="https://t.me/BCharitynet"

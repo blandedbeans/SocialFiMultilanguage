@@ -286,7 +286,7 @@ const NewPost: FC<Props> = ({ setShowModal, hideCard = false }) => {
           {error && (
             <ErrorMessage
               className="mb-3"
-              title="Transaction failed!"
+              title={t('Transaction Failed')}
               error={error}
             />
           )}
@@ -355,14 +355,14 @@ const NewPost: FC<Props> = ({ setShowModal, hideCard = false }) => {
                 onClick={createPost}
               >
                 {isUploading
-                  ? 'Uploading to IPFS'
+                  ? t('Uploading')
                   : typedDataLoading
-                  ? 'Generating Post'
+                  ? t('Generating post')
                   : signLoading
-                  ? 'Sign'
+                  ? t('Sign1')
                   : writeLoading || broadcastLoading
-                  ? 'Send'
-                  : 'Post'}
+                  ? t('Send')
+                  : t('Post')}
               </Button>
             </div>
           </div>

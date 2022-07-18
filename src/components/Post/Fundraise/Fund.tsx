@@ -238,7 +238,7 @@ const Fund: FC<Props> = ({ fund, collectModule, setRevenue, revenue }) => {
               )
             }
           >
-            Fund
+            {t('Fund')}
           </Button>
           {writeData?.hash ?? broadcastData?.broadcast?.txHash ? (
             <div className="mt-2">

@@ -10,10 +10,15 @@
   "Get Testnet": "获取testnet令牌",
 
   "Recommended Users": "推荐用户",
+  "No recommended": "没有推荐!",
+
+  "Setup profile": "设置你的B-Charity档案",
+  "Update profile": "在此更新个人资料",
 
   "Change Language": "更改语言",
 
   "About": "关于",
+  "Twitter": "推特",
   "Donate": "捐赠",
   "Status": "状况",
   "Vote": "投票",
@@ -105,6 +110,7 @@
   "Mirrors": "镜子",
   "NFTs": "NFTs",
   "No posts": "好像还没有发布",
+  "No posts 1": "还没有帖子!",
 
   "Whats happening": "发生了什么?",
   "Who to follow": "关注谁",
@@ -156,6 +162,8 @@
   "You're on a": "你在一个",
   "Day streak": "连续多日",
 
+  "Notification": "通知书",
+
   "Profile": "形象",
   "Account": "帐户",
   "Allowance": "补贴",
@@ -203,6 +211,7 @@
   "Disable super follow": "禁用超级跟随",
   "Update super follow": "更新超级跟随",
   "Loading super follow settings": "加载超级跟踪设置",
+  "Super follow": "超级关注",
 
   "Allow/revoke modules": "允许/撤销模块",
   "Allowance description": "为了使用收集功能，你需要允许你使用的模块，你可以随时允许和撤销该模块。",
@@ -256,12 +265,15 @@
   "Web description": "探索BCharity小组中的顶级评论、收集和最新出版物。",
 
   "Days ago": "天前",
+  "Commented on": "对你的评论 ",
 
   "Back": "返回",
   "Mirror description": "当有人镜像该出版物时，他们将因推荐该出版物而获得一些百分比的奖励。",
   "Permission": "许可",
   "Everyone": "每个人都可以收集",
   "Followers only": "只有追随者才能收集",
+
+  "Followed you": "上关注你",
 
   "No NFT": "似乎没有Nfts!",
 
@@ -280,6 +292,7 @@
   "Price": "价格",
   "Funds raised": "筹集的资金",
   "Funds goal": "资金目标",
+  "Fund": "基金",
 
   "Publications": "著作",
   "Profiles": "剖析",
@@ -313,13 +326,117 @@
   "Fundraise creation": "筹款活动正在进行中，请稍候！",
   "Fundraise created successfully": "筹款活动创建成功！",
 
-  "Alphanumeric error": "Handle should only contain alphanumeric characters",
-  "At least 2 characters": "Name should have at least 2 characters",
-  "Exceeds 100 characters": "Name should not exceed 100 characters",
-  "Location exceeds": "Location should not exceed 100 characters",
-  "Website exceeds": "Website should not exceed 100 characters",
-  "Twitter exceeds": "Twitter should not exceed 100 characters",
-  "Bio exceeds": "Bio should not exceed 260 characters",
+  "Alphanumeric error": "手柄应只包含字母数字字符",
+  "At least 2 characters": "名称应至少有2个字符",
+  "Less than 32": "名称应少于32个字符",
+  "Less than 260": "描述不应超过260个字符",
+  "Title less than 255": "标题不应超过255个字符",
+  "Exceeds 100 characters": "名称不应超过100个字符",
+  "Invalid amount": "无效金额",
+  "Within than 42": "以太坊地址应在42个字符以内",
+  "Invalid address": "无效的Ethereum地址",
+  "Invalid referral": "无效的推荐费",
+  "Less than 1000": "描述不应超过1000个字符",
+  "Location exceeds": "地点不应超过100个字符",
+  "Website exceeds": "网站不应超过100个字符",
+  "Twitter exceeds": "推特不应超过100个字符",
+  "Bio exceeds": "简历不应超过260个字符",
 
-  "Select file": "选择文件"
+  "Select file": "选择文件",
+
+  "Posted on": "发表于 ",
+  "Follows you": "上关注你",
+  "Loading following": "正在加载以下内容",
+
+  "Type": "类型",
+  "Select type": "选择类型",
+  "Illegal": "非法的",
+  "Fraud": "诈骗",
+  "Sensitive": "敏感的",
+  "Reason": "缘由",
+  "Select sub reason": "选择次要原因",
+  "Animal abuse": "虐待动物",
+  "Human abuse": "虐待人类",
+  "Scam": "骗局",
+  "Impersonation": "冒名顶替",
+  "NSFW": "不合适",
+  "Offensive": "攻击性",
+
+  "Copied to clipboard!": "复制到剪贴板!",
+  "Details": "详情",
+  "BCharity account": "BCharity账户",
+
+  "No publications for": "没有出版物用于 ",
+  "No profiles for": "没有个人资料 ",
+
+  "Care 1": "请确保，如果你允许这个模块，你将自动被检测到的金额，如果你",
+  "Collect": "收集",
+  "And": "和",
+
+  "Beta": "发展",
+
+  "Indexing": "编制索引",
+  "Index successful": "指数成功",
+
+  "Goto": "转到",
+
+  "No collectors": "没有收藏家。",
+
+  "Get perks": "并获得一些令人敬畏的福利!",
+  "Recipient 1": "接受者:",
+  "Perks": "你得到的好处",
+  "You can comment on": "你可以评论@",
+  "s publications": " 的出版物",
+  "You can collect": "你可以收集@",
+  "Super follow badge": "你将获得超级关注徽章，在@",
+  "s profile": "的概况",
+  "High voting power": "如果你多次关注，你将有很高的投票权",
+  "More coming": "更多内容即将推出™。",
+
+  "Allow follow module": "允许跟随模块",
+
+  "Choose attachment": "选择附件",
+
+  "Will get": "将得到",
+  "Referral 1": "介绍费",
+
+  "Search for gifs": "搜索GIF",
+  "No gifs found": "没有发现GIF。",
+  "Choose gifs": "选择GIF",
+  "Select gif": "选择GIF",
+  "Loading gifs": "加载GIF",
+
+  "Open main menu": "打开主菜单",
+
+  "Choose collect module": "选择收集模块",
+  "Loading modules": "加载你的模块",
+  "Failed to load modules": "加载模块失败",
+
+  "Only": "只有",
+  "Super followers": "超级追随者",
+  "Can": "可以",
+  "Followers can comment": "追随者可以评论",
+
+  "New post": "新帖子",
+
+  "Pub reported": "发表报告成功!",
+
+  "Notification failed": "加载通知失败",
+
+  "Generating post": "生成帖子",
+  "Sign1": "Sign",
+
+  "Unfollow": "取消关注",
+
+  "Members": "成员",
+
+  "Collect now": "现在收集",
+  "Collectors": "收集者",
+  "Token": "代币:",
+  "Referral fee": "% 介绍费",
+  "Revenue": "收入:",
+  "Sale ends": "销售结束:",
+
+  "Switch network": "开关网络",
+  "Change wallet": "请更换你的网络钱包!"
 }

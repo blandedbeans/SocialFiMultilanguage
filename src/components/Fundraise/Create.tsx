@@ -53,24 +53,8 @@ const MODULES_CURRENCY_QUERY = gql`
   }
 `
 
-const newFundraiseSchema = object({
-  title: string()
-    .min(2, { message: 'Title should be atleast 2 characters' })
-    .max(255, { message: 'Title should not exceed 255 characters' }),
-  amount: string().min(1, { message: 'Invalid amount' }),
-  goal: string(),
-  recipient: string()
-    .max(42, { message: 'Ethereum address should be within 42 characters' })
-    .regex(/^0x[a-fA-F0-9]{40}$/, { message: 'Invalid Ethereum address' }),
-  referralFee: string()
-    .min(1, { message: 'Invalid Referral fee' })
-    .max(20, { message: 'Invalid Referral fee' }),
-  description: string()
-    .max(1000, { message: 'Description should not exceed 1000 characters' })
-    .nullable()
-})
-
 const Create: NextPage = () => {
+  const { t } = useTranslation('common')
   const [cover, setCover] = useState<string>()
   const [coverType, setCoverType] = useState<string>()
   const [isUploading, setIsUploading] = useState<boolean>(false)
@@ -92,7 +76,22 @@ const Create: NextPage = () => {
       Logger.log('Query =>', `Fetched enabled module currencies`)
     }
   })
-
+  const newFundraiseSchema = object({
+    title: string()
+      .min(2, { message: t('At least 2 characters') })
+      .max(255, { message: t('Title less than 255') }),
+    amount: string().min(1, { message: t('Invalid amount') }),
+    goal: string(),
+    recipient: string()
+      .max(42, { message: t('Within than 42') })
+      .regex(/^0x[a-fA-F0-9]{40}$/, { message: t('Invalid address') }),
+    referralFee: string()
+      .min(1, { message: t('Invalid referral') })
+      .max(20, { message: t('Invalid referral') }),
+    description: string()
+      .max(1000, { message: t('Less than 1000') })
+      .nullable()
+  })
   const {
     data,
     isLoading: writeLoading,
@@ -192,7 +191,7 @@ const Create: NextPage = () => {
       }
     }
   )
-  const { t } = useTranslation('common')
+
   const createFundraise = async (
     title: string,
     amount: string,

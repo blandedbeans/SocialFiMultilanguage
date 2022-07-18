@@ -31,13 +31,6 @@ import { useAppPersistStore, useAppStore } from 'src/store/app'
 import { useContractWrite, useSignTypedData } from 'wagmi'
 import { object, string } from 'zod'
 
-const newCrowdfundSchema = object({
-  amount: string().min(1, { message: 'Invalid amount' }),
-  recipient: string()
-    .max(42, { message: 'Ethereum address should be within 42 characters' })
-    .regex(/^0x[a-fA-F0-9]{40}$/, { message: 'Invalid Ethereum address' })
-})
-
 const MODULES_CURRENCY_QUERY = gql`
   query EnabledCurrencyModules($request: SingleProfileQueryRequest!) {
     enabledModuleCurrencies {
@@ -120,6 +113,12 @@ const SuperFollow: FC = () => {
     onError(error: any) {
       toast.error(error?.data?.message ?? error?.message)
     }
+  })
+  const newCrowdfundSchema = object({
+    amount: string().min(1, { message: t('Invalid amount') }),
+    recipient: string()
+      .max(42, { message: t('Within than 32') })
+      .regex(/^0x[a-fA-F0-9]{40}$/, { message: t('Invalid address') })
   })
 
   const form = useZodForm({

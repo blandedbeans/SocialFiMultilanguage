@@ -38,16 +38,8 @@ import { v4 as uuid } from 'uuid'
 import { useContractWrite, useSignTypedData } from 'wagmi'
 import { object, string } from 'zod'
 
-const newGroupSchema = object({
-  name: string()
-    .min(2, { message: 'Name should be atleast 2 characters' })
-    .max(31, { message: 'Name should be less than 32 characters' }),
-  description: string()
-    .max(260, { message: 'Description should not exceed 260 characters' })
-    .nullable()
-})
-
 const Create: NextPage = () => {
+  const { t } = useTranslation('common')
   const { userSigNonce, setUserSigNonce } = useAppStore()
   const { isAuthenticated, currentUser } = useAppPersistStore()
   const [avatar, setAvatar] = useState<string>()
@@ -58,6 +50,14 @@ const Create: NextPage = () => {
     onError(error) {
       toast.error(error?.message)
     }
+  })
+  const newGroupSchema = object({
+    name: string()
+      .min(2, { message: t('At least 2 characters') })
+      .max(31, { message: t('Less than 32') }),
+    description: string()
+      .max(260, { message: t('Less than 260') })
+      .nullable()
   })
 
   const {
@@ -156,7 +156,6 @@ const Create: NextPage = () => {
       }
     }
   )
-  const { t } = useTranslation('common')
   const createGroup = async (name: string, description: string | null) => {
     if (!isAuthenticated) return toast.error(CONNECT_WALLET)
 
