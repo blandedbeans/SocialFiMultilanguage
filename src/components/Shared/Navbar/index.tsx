@@ -11,10 +11,12 @@ import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAppPersistStore } from 'src/store/app'
 
+import ForDonors from './ForDonors'
+import ForNonprofits from './ForNonprofits'
 import MenuItems from './MenuItems'
 import MoreNavItems from './MoreNavItems'
+import Partnerships from './Partnerships'
 import Search from './Search'
-
 const StaffBar = dynamic(() => import('./StaffBar'))
 const NewPostModal = dynamic(() => import('../../Post/NewPost/Modal'))
 
@@ -44,7 +46,7 @@ const Navbar: FC = () => {
         <a href={url} aria-current={current ? 'page' : undefined}>
           <Disclosure.Button
             className={clsx(
-              'w-full text-left px-2 md:px-3 py-1 rounded-md font-black cursor-pointer text-sm tracking-wide',
+              'w-full text-left px-1 md:px-1 py-1 rounded-md font-black cursor-pointer text-xs tracking-wide',
               {
                 'text-black dark:text-white bg-gray-200 dark:bg-gray-800':
                   current,
@@ -76,6 +78,14 @@ const Navbar: FC = () => {
           name={t('Groups')}
           current={pathname == '/groups'}
         />
+        <NavItem
+          url="/resources"
+          name={t('Resources')}
+          current={pathname == '/resources'}
+        />
+        <ForNonprofits />
+        <ForDonors />
+        <Partnerships />
         <MoreNavItems />
       </>
     )

@@ -438,5 +438,32 @@
   "Sale ends": "销售结束:",
 
   "Switch network": "开关网络",
-  "Change wallet": "请更换你的网络钱包!"
+  "Change wallet": "请更换你的网络钱包!",
+
+  "Resources": "资源",
+  "For nonprofits": "对于非营利组织",
+  "For donors": "对于捐助者",
+  "Partnerships": "伙伴关系",
+
+  "Accepting Crypto": "接受加密货币捐款",
+  "Why Choose Crypto": "为什么选择加密货币？",
+  "NFT Fundraising Report": "NFT筹款报告",
+  "2021 Annual Report": "2021年年度报告",
+  "Other Crypto Resources": "其他加密货币资源",
+  "Case Studies": "案例研究",
+  "Testimonials": "褒奖",
+
+  "Donate Crypto": "捐献加密货币",
+  "Other Ways to Give": "其他捐赠方式",
+  "Services for Donors": "为捐赠者提供的服务",
+  "Support for Donors": "对捐赠者的支持",
+  "Institutional Private Client Services": "机构私人客户服务部",
+  "Tax Resources": "税收资源",
+
+  "Crypto Industry Partners": "加密货币行业合作伙伴",
+  "Media Partners": "媒体合作伙伴",
+  "Nonprofit Industry Partners": "非营利性行业合作伙伴",
+  "NFT Partners": "NFT合作伙伴",
+  "Integration Partners": "整合合作伙伴",
+  "Institutional Partner Services": "机构合作伙伴服务"
 }
