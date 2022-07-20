@@ -50,7 +50,7 @@ export default function ForNonprofits() {
               </Menu.Item>
               <Menu.Item
                 as={NextLink}
-                href=""
+                href="/whychoose"
                 className={({ active }: { active: boolean }) =>
                   clsx({ 'dropdown-active': active }, 'menu-item')
                 }
