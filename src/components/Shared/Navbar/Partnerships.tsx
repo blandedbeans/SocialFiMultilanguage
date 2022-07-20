@@ -39,68 +39,13 @@ export default function Partnerships() {
             >
               <Menu.Item
                 as={NextLink}
-                href=""
+                href="/partners"
                 className={({ active }: { active: boolean }) =>
                   clsx({ 'dropdown-active': active }, 'menu-item')
                 }
               >
                 <div className="flex items-center space-x-1.5">
-                  <div>{t('Crypto Industry Partners')}</div>
-                </div>
-              </Menu.Item>
-              <Menu.Item
-                as={NextLink}
-                href=""
-                className={({ active }: { active: boolean }) =>
-                  clsx({ 'dropdown-active': active }, 'menu-item')
-                }
-              >
-                <div className="flex items-center space-x-1.5">
-                  <div>{t('Media Partners')}</div>
-                </div>
-              </Menu.Item>
-              <Menu.Item
-                as={NextLink}
-                href=""
-                className={({ active }: { active: boolean }) =>
-                  clsx({ 'dropdown-active': active }, 'menu-item')
-                }
-              >
-                <div className="flex items-center space-x-1.5">
-                  <div>{t('Nonprofit Industry Partners')}</div>
-                </div>
-              </Menu.Item>
-              <Menu.Item
-                as={NextLink}
-                href=""
-                className={({ active }: { active: boolean }) =>
-                  clsx({ 'dropdown-active': active }, 'menu-item')
-                }
-              >
-                <div className="flex items-center space-x-1.5">
-                  <div>{t('NFT Partners')}</div>
-                </div>
-              </Menu.Item>
-              <Menu.Item
-                as={NextLink}
-                href=""
-                className={({ active }: { active: boolean }) =>
-                  clsx({ 'dropdown-active': active }, 'menu-item')
-                }
-              >
-                <div className="flex items-center space-x-1.5">
-                  <div>{t('Integration Partners')}</div>
-                </div>
-              </Menu.Item>
-              <Menu.Item
-                as={NextLink}
-                href=""
-                className={({ active }: { active: boolean }) =>
-                  clsx({ 'dropdown-active': active }, 'menu-item')
-                }
-              >
-                <div className="flex items-center space-x-1.5">
-                  <div>{t('Institutional Partner Services')}</div>
+                  <div>Partners</div>
                 </div>
               </Menu.Item>
             </Menu.Items>

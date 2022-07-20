@@ -11,7 +11,6 @@ import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAppPersistStore } from 'src/store/app'
 
-import ForDonors from './ForDonors'
 import ForNonprofits from './ForNonprofits'
 import MenuItems from './MenuItems'
 import MoreNavItems from './MoreNavItems'
@@ -84,7 +83,6 @@ const Navbar: FC = () => {
           current={pathname == '/resources'}
         />
         <ForNonprofits />
-        <ForDonors />
         <Partnerships />
         <MoreNavItems />
       </>
