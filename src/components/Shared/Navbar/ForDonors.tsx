@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 
 import { NextLink } from './MenuItems'
 
-export default function ForNonprofits() {
+export default function ForDonors() {
   const { t } = useTranslation('common')
   return (
     <Menu as="div">
@@ -21,7 +21,7 @@ export default function ForNonprofits() {
               }
             )}
           >
-            {t('For nonprofits')}
+            {t('For donors')}
           </Menu.Button>
           <Transition
             show={open}
@@ -39,57 +39,24 @@ export default function ForNonprofits() {
             >
               <Menu.Item
                 as={NextLink}
-                href="/acceptingcrypto"
+                href="https://bcharity.vercel.app/posts/0x1f43-0x01"
                 className={({ active }: { active: boolean }) =>
                   clsx({ 'dropdown-active': active }, 'menu-item')
                 }
               >
                 <div className="flex items-center space-x-1.5">
-                  <div>{t('Accepting Crypto')}</div>
+                  <div>{t('Donate')}</div>
                 </div>
               </Menu.Item>
               <Menu.Item
                 as={NextLink}
-                href="/whychoose"
+                href="/supportdonors"
                 className={({ active }: { active: boolean }) =>
                   clsx({ 'dropdown-active': active }, 'menu-item')
                 }
               >
                 <div className="flex items-center space-x-1.5">
-                  <div>{t('Why Choose Crypto')}</div>
-                </div>
-              </Menu.Item>
-              <Menu.Item
-                as={NextLink}
-                href="/support"
-                className={({ active }: { active: boolean }) =>
-                  clsx({ 'dropdown-active': active }, 'menu-item')
-                }
-              >
-                <div className="flex items-center space-x-1.5">
-                  <div>{t('Support For Organizations')}</div>
-                </div>
-              </Menu.Item>
-              <Menu.Item
-                as={NextLink}
-                href="/resources"
-                className={({ active }: { active: boolean }) =>
-                  clsx({ 'dropdown-active': active }, 'menu-item')
-                }
-              >
-                <div className="flex items-center space-x-1.5">
-                  <div>{t('Other Crypto Resources')}</div>
-                </div>
-              </Menu.Item>
-              <Menu.Item
-                as={NextLink}
-                href="/clientstories"
-                className={({ active }: { active: boolean }) =>
-                  clsx({ 'dropdown-active': active }, 'menu-item')
-                }
-              >
-                <div className="flex items-center space-x-1.5">
-                  <div>{t('Client Stories')}</div>
+                  <div>{t('Support for Donors')}</div>
                 </div>
               </Menu.Item>
             </Menu.Items>

@@ -11,6 +11,7 @@ import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAppPersistStore } from 'src/store/app'
 
+import ForDonors from './ForDonors'
 import ForNonprofits from './ForNonprofits'
 import MenuItems from './MenuItems'
 import MoreNavItems from './MoreNavItems'
@@ -72,18 +73,19 @@ const Navbar: FC = () => {
           name={t('Explore')}
           current={pathname == '/explore'}
         />
-        <NavItem
-          url="/groups"
-          name={t('Groups')}
-          current={pathname == '/groups'}
-        />
+        <ForNonprofits />
+        <ForDonors />
         <NavItem
           url="/resources"
           name={t('Resources')}
           current={pathname == '/resources'}
         />
-        <ForNonprofits />
         <Partnerships />
+        <NavItem
+          url="/groups"
+          name={t('Groups')}
+          current={pathname == '/groups'}
+        />
         <MoreNavItems />
       </>
     )

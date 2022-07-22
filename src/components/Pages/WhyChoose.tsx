@@ -1,19 +1,20 @@
 import Footer from '@components/Shared/Footer'
 import SEO from '@components/utils/SEO'
 import React, { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const WhyChoose: FC = () => {
+  const { t } = useTranslation('common')
   return (
     <>
-      <SEO title="Privacy • BCharity" />
+      <SEO title="WhyChoose • BCharity" />
       <div className="flex justify-center items-center w-full h-48 bg-brand-400">
         <div className="relative text-center">
           <h1 className="text-3xl font-semibold text-white md:text-4xl">
-            Cryptocurrency is Going Mainstream. For Nonprofits, Too. <br></br>
+            {t('Why choose title')} <br></br>
           </h1>
           <h2 className="text-3xl font-semibold text-white py-3 md:text-xl">
-            Every nonprofit needs to know why cryptocurrency donations are the
-            next big opportunity.
+            {t('Why choose subtitle')}
           </h2>
         </div>
       </div>
@@ -22,64 +23,27 @@ const WhyChoose: FC = () => {
           <div className="relative mx-auto rounded-lg sm:w-2/4 max-w-3/4">
             <div className="!p-8 prose dark:prose-dark max-w-none text-gray-600 dark:text-gray-200">
               <div className="mt-8 mb-5 text-xl font-bold text-black dark:text-white">
-                Why Accept Cryptocurrency Donations?
+                {t('Why choose text')}
               </div>
-              <p className="mb-5">
-                Cryptocurrencies are on their way to achieving mainstream
-                status. And believe it or not, but nonprofits like Save the
-                Children led the way by being among the first institutions to
-                accept Bitcoin and other cryptocurrencies. Today, charitable
-                organizations of all sizes are fundraising cryptocurrency, from
-                one-person teams to international operations.
-              </p>
-              <p className="mb-5">
-                Nonprofits that take cryptocurrency donations today will have
-                the early-mover advantage on their peer organizations. That
-                means greater access to a relatively young, affluent crypto
-                donor base that is:
-              </p>
+              <p className="mb-5">{t('Why choose text2')}</p>
+              <p className="mb-5">{t('Why choose text3')}</p>
               <ul className="mb-3 space-y-2 list-disc list-inside">
-                <li>
-                  Increasing its wealth via the growing crypto market cap, which
-                  hit an all-time-high of $3T in 2021
-                </li>
-                <li>
-                  Experiencing exponential user growth, similar to the wave of
-                  Internet adoption in the late 1990s
-                </li>
-                <li>
-                  Excited about using cryptocurrency and NFTs as a way to
-                  support their favorite causes
-                </li>
-                <li className="linkify">
-                  More generous on average than their cash donor counterparts
-                </li>
+                <li>{t('Why choose text4')}</li>
+                <li>{t('Why choose text5')}</li>
+                <li>{t('Why choose text6')}</li>
+                <li className="linkify">{t('Why choose text7')}</li>
               </ul>
               <div className="mt-8 mb-5 text-xl font-bold text-black dark:text-white">
-                More than Bitcoin
+                {t('Why choose text8')}
               </div>
-              <p className="mb-5">
-                Bitcoin may be “digital gold,” but the recent rise of Ethereum
-                and other altcoins has opened up a new world of possibilities
-                for nonprofits.
-              </p>
-              <p className="mb-5">
-                By accepting cryptocurrency donations with B-Charity, your
-                nonprofit can take advantage of a variety of innovative
-                fundraising techniques that are unique to the cryptocurrency and
-                blockchain ecosystem, such as:
-              </p>
+              <p className="mb-5">{t('Why choose text9')}</p>
+              <p className="mb-5">{t('Why choose text10')}</p>
               <ul className="mb-3 space-y-2 list-disc list-inside">
-                <li>NFT virtual auctions</li>
-                <li>Charity token donations</li>
-                <li>Smart contract giving</li>
+                <li>{t('Why choose text11')}</li>
+                <li>{t('Why choose text12')}</li>
+                <li>{t('Why choose text13')}</li>
               </ul>
-              <p className="mb-5">
-                Of course, you can continue to fundraise with testimonials and
-                dollars-to-impact appeals that have been successful in the past.
-                Just be ready to answer when crypto donors ask: what can one
-                Bitcoin do to support your mission?
-              </p>
+              <p className="mb-5">{t('Why choose text14')}</p>
             </div>
           </div>
         </div>

@@ -45,7 +45,7 @@ export default function Partnerships() {
                 }
               >
                 <div className="flex items-center space-x-1.5">
-                  <div>Partners</div>
+                  <div>{t('Partners')}</div>
                 </div>
               </Menu.Item>
             </Menu.Items>
