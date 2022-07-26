@@ -102,6 +102,18 @@ const MoreNavItems: FC = () => {
                   <div>{t('Contact Button')}</div>
                 </div>
               </Menu.Item>
+              <Menu.Item
+                as={NextLink}
+                href="/partnershipform"
+                className={({ active }: { active: boolean }) =>
+                  clsx({ 'dropdown-active': active }, 'menu-item')
+                }
+              >
+                <div className="flex items-center space-x-1.5">
+                  <SupportIcon className="w-4 h-4" />
+                  <div>Partnership Form</div>
+                </div>
+              </Menu.Item>
             </Menu.Items>
           </Transition>
         </>
