@@ -104,7 +104,7 @@ const MoreNavItems: FC = () => {
               </Menu.Item>
               <Menu.Item
                 as={NextLink}
-                href="/partnershipform"
+                href="/partnershipapplication"
                 className={({ active }: { active: boolean }) =>
                   clsx({ 'dropdown-active': active }, 'menu-item')
                 }

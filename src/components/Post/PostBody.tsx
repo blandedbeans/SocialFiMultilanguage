@@ -17,6 +17,11 @@ const Fundraise = dynamic(() => import('./Fundraise'), {
   loading: () => <FundraiseShimmer />
 })
 
+const PartnershipApplication = dynamic(
+  () => import('./PartnershipApplication'),
+  {}
+)
+
 interface Props {
   post: BCharityPost
 }
@@ -68,6 +73,8 @@ const PostBody: FC<Props> = ({ post }) => {
         </div>
       ) : postType === 'fundraise' ? (
         <Fundraise fund={post} />
+      ) : postType === 'PartnershipApplication' ? (
+        <PartnershipApplication post={post} />
       ) : (
         <>
           <div
