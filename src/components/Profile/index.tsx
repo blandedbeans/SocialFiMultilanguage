@@ -1,8 +1,14 @@
 import { gql, useQuery } from '@apollo/client'
-import { GridItemEight, GridItemFour, GridLayout } from '@components/GridLayout'
+import {
+  GridItemEight,
+  GridItemFour,
+  GridItemTwelve,
+  GridLayout
+} from '@components/GridLayout'
 import NFTShimmer from '@components/Shared/Shimmer/NFTShimmer'
 import PostsShimmer from '@components/Shared/Shimmer/PostsShimmer'
 import SEO from '@components/utils/SEO'
+import isVerified from '@lib/isVerified'
 import Logger from '@lib/logger'
 import { NextPage } from 'next'
 import dynamic from 'next/dynamic'
@@ -13,9 +19,11 @@ import Custom404 from 'src/pages/404'
 import Custom500 from 'src/pages/500'
 import { useAppPersistStore } from 'src/store/app'
 
+import ApplicationFeed from './ApplicationFeed'
 import Cover from './Cover'
 import Details from './Details'
 import FeedType from './FeedType'
+import OrgApplicationFeed from './OrgApplicationFeed'
 import ProfilePageShimmer from './Shimmer'
 
 const Feed = dynamic(() => import('./Feed'), {
@@ -108,22 +116,45 @@ const ViewProfile: NextPage = () => {
       )}
       <Cover cover={profile?.coverPicture?.original?.url} />
       <GridLayout className="pt-6">
-        <GridItemFour>
-          <Details profile={profile} />
-        </GridItemFour>
-        <GridItemEight className="space-y-5">
-          <FeedType
-            stats={profile?.stats}
-            setFeedType={setFeedType}
-            feedType={feedType}
-          />
-          {(feedType === 'POST' ||
-            feedType === 'COMMENT' ||
-            feedType === 'MIRROR') && (
-            <Feed profile={profile} type={feedType} />
-          )}
-          {feedType === 'NFT' && <NFTFeed profile={profile} />}
-        </GridItemEight>
+        {feedType === 'OrgApplicationFeed' || feedType == 'ApplicationFeed' ? (
+          <GridItemTwelve className="space-y-5">
+            <FeedType
+              stats={profile?.stats}
+              setFeedType={setFeedType}
+              feedType={feedType}
+              id={profile?.id} //profile={profile}
+              profile={profile}
+            />
+            {isVerified(profile?.id)
+              ? feedType === 'OrgApplicationFeed' && (
+                  <OrgApplicationFeed profile={profile} />
+                )
+              : feedType === 'ApplicationFeed' && (
+                  <ApplicationFeed profile={profile} />
+                )}
+          </GridItemTwelve>
+        ) : (
+          <>
+            <GridItemFour>
+              <Details profile={profile} />
+            </GridItemFour>
+            <GridItemEight className="space-y-5">
+              <FeedType
+                stats={profile?.stats}
+                setFeedType={setFeedType}
+                profile={profile}
+                feedType={feedType}
+                id={profile?.id} //profile={profile}
+              />
+              {(feedType === 'POST' ||
+                feedType === 'COMMENT' ||
+                feedType === 'MIRROR') && (
+                <Feed profile={profile} type={feedType} />
+              )}
+              {feedType === 'NFT' && <NFTFeed profile={profile} />}
+            </GridItemEight>
+          </>
+        )}
       </GridLayout>
     </>
   )

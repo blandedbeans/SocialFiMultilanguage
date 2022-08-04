@@ -251,7 +251,7 @@ const PartnershipApplication: NextPage = () => {
     const { path } = await uploadToIPFS({
       version: '1.0.0',
       metadata_id: uuid(),
-      content: `Partnership Application for @${receivingorganizationname}`,
+      content: `@${receivingorganizationname} Partnership Application`,
       external_url: null,
       imageMimeType: coverType,
       name: organizationname,
@@ -445,7 +445,7 @@ const PartnershipApplication: NextPage = () => {
                 >
                   {!!countryArr?.length &&
                     countryArr.map(({ label, value }) => (
-                      <option key={value} value={value}>
+                      <option key={value} value={label}>
                         {label}
                       </option>
                     ))}

@@ -1,22 +1,28 @@
-import { ProfileStats } from '@generated/types'
+import { Profile, ProfileStats } from '@generated/types'
 import {
   ChatAlt2Icon,
+  ClockIcon,
   PencilAltIcon,
   PhotographIcon,
   SwitchHorizontalIcon
 } from '@heroicons/react/outline'
+import isVerified from '@lib/isVerified'
 import nFormatter from '@lib/nFormatter'
 import clsx from 'clsx'
 import React, { Dispatch, FC, ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
 
+import OrgVerifiedApplications from './OrgVerifiedApplications'
+
 interface Props {
   stats: ProfileStats
   setFeedType: Dispatch<string>
   feedType: string
+  id: string
+  profile: Profile
 }
 
-const FeedType: FC<Props> = ({ stats, setFeedType, feedType }) => {
+const FeedType: FC<Props> = ({ stats, setFeedType, feedType, id, profile }) => {
   interface FeedLinkProps {
     name: string
     icon: ReactNode
@@ -86,6 +92,25 @@ const FeedType: FC<Props> = ({ stats, setFeedType, feedType }) => {
         type="NFT"
         testId="type-nfts"
       />
+
+      {isVerified(id) ? (
+        <>
+          <OrgVerifiedApplications profile={profile} />
+          <FeedLink
+            name="Pending Partnerships"
+            icon={<ClockIcon className="w-4 h-4" />}
+            type="OrgApplicationFeed"
+            testId="type-partnershipapplication"
+          />
+        </>
+      ) : (
+        <FeedLink
+          name="Partnership Applications"
+          icon={<ClockIcon className="w-4 h-4" />}
+          type="ApplicationFeed"
+          testId="type-partnershipapplication"
+        />
+      )}
     </div>
   )
 }
