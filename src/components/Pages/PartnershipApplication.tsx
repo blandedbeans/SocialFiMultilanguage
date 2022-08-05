@@ -26,6 +26,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Controller } from 'react-hook-form'
 import toast from 'react-hot-toast'
+import { useTranslation } from 'react-i18next'
 import {
   APP_NAME,
   CONNECT_WALLET,
@@ -50,6 +51,7 @@ export const PROFILE_QUERY = gql`
 `
 
 const PartnershipApplication: NextPage = () => {
+  const { t } = useTranslation('common')
   const { push } = useRouter()
   const { isAuthenticated, currentUser } = useAppPersistStore()
   const [cover, setCover] = useState<string>()
@@ -338,11 +340,11 @@ const PartnershipApplication: NextPage = () => {
   if (!isAuthenticated) return <Custom404 />
   return (
     <GridLayout>
-      <SEO title="Apply for a Partnership • BCharity" />
+      <SEO title={t('Apply for a Partnership • BCharity')} />
       <GridItemFour>
         <SettingsHelper
-          heading="Become a BCharity Partner"
-          description="Fill out this form to become a parter with BCharity"
+          heading={t('Become a BCharity Partner')}
+          description={t('Fill out this form to become a parter with BCharity')}
         />
       </GridItemFour>
       <GridItemEight>
@@ -395,7 +397,7 @@ const PartnershipApplication: NextPage = () => {
                   fieldState: { error }
                 }) => (
                   <OrganizationNameInput
-                    label="Receiving Organization Name"
+                    label={t('Receiving Organization Name')}
                     error={error?.message}
                     placeholder={'BCharity'}
                     value={value}
@@ -410,33 +412,33 @@ const PartnershipApplication: NextPage = () => {
                 )}
               />
               <Input
-                label="Organization Wallet Address"
+                label={t('Organization Wallet Address')}
                 type="text"
                 placeholder={'0x3A5bd...5e3'}
                 {...form.register('orgWalletAddress')}
               />
               <Input
-                label="Your Name"
+                label={t('Your Name')}
                 placeholder="Arnold"
                 {...form.register('name')}
               />
               <Input
-                label="Your Email"
+                label={t('Your Email')}
                 placeholder=""
                 {...form.register('email')}
               />
               <Input
-                label="Your Organization Name"
+                label={t('Your Organization Name')}
                 placeholder=""
                 {...form.register('organizationname')}
               />
               <Input
-                label="Website URL"
+                label={t('Website URL')}
                 placeholder=""
                 {...form.register('websiteurl')}
               />
               <div>
-                <div className="label">Select Country</div>
+                <div className="label">{t('Select Country')}</div>
                 <select
                   className="w-full bg-white rounded-xl border border-gray-300 outline-none dark:bg-gray-800 disabled:bg-gray-500 disabled:bg-opacity-20 disabled:opacity-60 dark:border-gray-700/80 focus:border-brand-500 focus:ring-brand-400"
                   value={selectedCountry}
@@ -452,44 +454,44 @@ const PartnershipApplication: NextPage = () => {
                 </select>
               </div>
               <div>
-                <div className="label">Select Category</div>
+                <div className="label">{t('Select Category')}</div>
                 <select
                   className="w-full bg-white rounded-xl border border-gray-300 outline-none dark:bg-gray-800 disabled:bg-gray-500 disabled:bg-opacity-20 disabled:opacity-60 dark:border-gray-700/80 focus:border-brand-500 focus:ring-brand-400"
                   value={selectedCategory}
                   {...form.register('category')}
                   onChange={(e) => selectCategoryHandler(e.target.value)}
                 >
-                  <option>Nonprofit</option>
-                  <option>Corporate Partner</option>
-                  <option>Media Partner</option>
-                  <option>Influencer</option>
-                  <option>Donor</option>
-                  <option>Financial Service</option>
-                  <option>Crypto Project</option>
-                  <option>NFT Project or Artist</option>
-                  <option>Crypto Exchange</option>
-                  <option>Other</option>
+                  <option>{t('Nonprofit')}</option>
+                  <option>{t('Corporate Partner')}</option>
+                  <option>{t('Media Partner')}</option>
+                  <option>{t('Influencer')}</option>
+                  <option>{t('Donor')}</option>
+                  <option>{t('Financial Service')}</option>
+                  <option>{t('Crypto Project')}</option>
+                  <option>{t('NFT Project or Artist')}</option>
+                  <option>{t('Crypto Exchange')}</option>
+                  <option>{t('Other')}</option>
                 </select>
               </div>
               <div>
-                <div className="label">How did you hear about us?</div>
+                <div className="label">{t('How did you hear about us?')}</div>
                 <select
                   className="w-full bg-white rounded-xl border border-gray-300 outline-none dark:bg-gray-800 disabled:bg-gray-500 disabled:bg-opacity-20 disabled:opacity-60 dark:border-gray-700/80 focus:border-brand-500 focus:ring-brand-400"
                   value={selectedReason}
                   {...form.register('reason')}
                   onChange={(e) => selectReasonHandler(e.target.value)}
                 >
-                  <option>Search Engine</option>
-                  <option>Social Media</option>
-                  <option>Advertising</option>
-                  <option>News</option>
-                  <option>Newsletter</option>
-                  <option>Online Event</option>
-                  <option>In-person Event</option>
-                  <option>Word of Mouth</option>
+                  <option>{t('Search Engine')}</option>
+                  <option>{t('Social Media')}</option>
+                  <option>{t('Advertising')}</option>
+                  <option>{t('News')}</option>
+                  <option>{t('Newsletter')}</option>
+                  <option>{t('Online Event')}</option>
+                  <option>{t('In-person Event')}</option>
+                  <option>{t('Word of Mouth')}</option>
                 </select>
               </div>
-              <TextArea label="Message" {...form.register('message')} />
+              <TextArea label={t('Message')} {...form.register('message')} />
               <div className="ml-auto">
                 <Button
                   type="submit"
@@ -502,7 +504,7 @@ const PartnershipApplication: NextPage = () => {
                     broadcastLoading
                   }
                 >
-                  Submit
+                  {t('Submit')}
                 </Button>
               </div>
             </Form>
