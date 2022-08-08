@@ -70,7 +70,7 @@ const Contact: FC = () => {
               />
               <TextArea
                 label={t('Contact message')}
-                placeholder={t('Message')}
+                placeholder={t('Help Message')}
                 {...form.register('message')}
               />
               <div className="ml-auto">

@@ -74,7 +74,7 @@ const ApplicationTable: FC<Props> = ({
           message: i.metadata.attributes[10].value,
           verified: {
             index: index,
-            value: verified ? 'Verified' : 'Unverified',
+            value: verified ? 'Accepted' : 'Not Accepted',
             postID: i.id
           }
         }
@@ -100,7 +100,7 @@ const ApplicationTable: FC<Props> = ({
             message: metadata.attributes[10].value,
             verified: {
               index: index,
-              value: 'Verified',
+              value: 'Accepted',
               postID: id
             }
           }

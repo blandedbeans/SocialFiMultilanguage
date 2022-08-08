@@ -94,7 +94,7 @@ const OrgVerifiedApplications: FC<Props> = ({ profile, callback }) => {
           message: i.metadata.attributes[10].value,
           verified: {
             index: index,
-            value: verified ? 'Verified' : 'Unverified',
+            value: verified ? 'Accepted' : 'Not Accepted',
             postID: i.id
           }
         }
