@@ -78,6 +78,7 @@ const OrgVerifiedApplications: FC<Props> = ({ profile, callback }) => {
   const handleTableData = async (data: any) => {
     return Promise.all(
       data.map(async (j: any, index: number) => {
+        console.log(j)
         const i = j.mentionPublication
         let verified = false
         if (i.collectNftAddress) verified = true

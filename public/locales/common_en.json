@@ -543,5 +543,17 @@
   "Online Event": "Online Event",
   "In-person Event": "In-person Event",
   "Word of Mouth": "Word of Mouth",
-  "Message": "Message"
+  "Message": "Message",
+  "Form Submission in progress, please wait!": "Form Submission in progress, please wait!",
+  "Form Submission created successfully": "Form Submission created successfully",
+  "Partnership Applications": "Partnership Applications",
+  "Pending Partnerships": "Pending Partnerships",
+  "Name should not exceed 50 characters": "Name should not exceed 50 characters",
+  "Email should not exceed 256 characters": "Email should not exceed 256 characters",
+  "Organization name should not exceed 100 characters": "Organization name should not exceed 100 characters",
+  "Name should be at least 2 characters": "Name should be at least 2 characters",
+  "Invalid email address": "Invalid email address",
+  "Website URL should not exceed 1000 characters": "Website URL should not exceed 1000 characters",
+  "Invalid url": "Invalid url",
+  "Message should not exceed 1000 characters": "Message should not exceed 1000 characters"
 }

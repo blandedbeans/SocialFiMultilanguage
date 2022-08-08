@@ -97,7 +97,7 @@ const FeedType: FC<Props> = ({ stats, setFeedType, feedType, id, profile }) => {
         <>
           <OrgVerifiedApplications profile={profile} />
           <FeedLink
-            name="Pending Partnerships"
+            name={t('Pending Partnerships')}
             icon={<ClockIcon className="w-4 h-4" />}
             type="OrgApplicationFeed"
             testId="type-partnershipapplication"
@@ -105,7 +105,7 @@ const FeedType: FC<Props> = ({ stats, setFeedType, feedType, id, profile }) => {
         </>
       ) : (
         <FeedLink
-          name="Partnership Applications"
+          name={t('Partnership Applications')}
           icon={<ClockIcon className="w-4 h-4" />}
           type="ApplicationFeed"
           testId="type-partnershipapplication"

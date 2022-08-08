@@ -6,5 +6,6 @@ export const ApplicationStatusCell = (props: {
   const status = props.value.value
   const index = props.value.index
   const postID = props.value.postID
+  console.log(status)
   return <p className="text-brand-500">{status}</p>
 }

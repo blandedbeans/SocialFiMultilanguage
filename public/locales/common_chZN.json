@@ -538,5 +538,17 @@
   "Newsletter": "新闻通讯",
   "Online Event": "在线活动",
   "Word of Mouth": "口耳相传",
-  "Message": "留言"
+  "Message": "留言",
+  "Form Submission in progress, please wait!": "表格提交正在进行中，请等待",
+  "Form Submission created successfully": "成功创建表格提交",
+  "Partnership Applications": "伙伴关系申请",
+  "Pending Partnerships": "待定的伙伴关系",
+  "Name should not exceed 50 characters": "名称不应超过50个字符",
+  "Email should not exceed 256 characters": "电子邮件不应超过256个字符",
+  "Organization name should not exceed 100 characters": "组织名称不应超过100个字符",
+  "Name should be at least 2 characters": "名称应至少有2个字符",
+  "Invalid email address": "无效的电子邮件地址",
+  "Website URL should not exceed 1000 characters": "网站URL不应超过1000个字符",
+  "Invalid url": "无效网址",
+  "Message should not exceed 1000 characters": "信息不应超过1000个字符"
 }

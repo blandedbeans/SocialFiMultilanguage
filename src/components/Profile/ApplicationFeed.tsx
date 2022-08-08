@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-key */
+0 /* eslint-disable react/jsx-key */
 import { gql } from '@apollo/client'
 import { Profile } from '@generated/types'
 import { CommentFields } from '@gql/CommentFields'
@@ -18,6 +18,7 @@ const PROFILE_FEED_QUERY = gql`
     publications(request: $request) {
       items {
         ... on Post {
+          collectNftAddress
           ...PostFields
         }
         ... on Comment {

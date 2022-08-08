@@ -67,29 +67,29 @@ const PartnershipApplication: NextPage = () => {
   const newContactSchema = object({
     name: string()
       .max(50, {
-        message: 'Name should not exceed 50 characters'
+        message: t('Name should not exceed 50 characters')
       })
-      .min(2, { message: 'Name should be at least 2 characters' }),
+      .min(2, { message: t('Name should be at least 2 characters') }),
     email: string()
       .max(256, {
-        message: 'Email should not exceed 256 characters'
+        message: t('Email should not exceed 256 characters')
       })
-      .email({ message: 'Invalid email address' }),
+      .email({ message: t('Invalid email address') }),
     organizationname: string()
       .max(100, {
-        message: 'Organization name should not exceed 100 characters'
+        message: t('Organization name should not exceed 100 characters')
       })
-      .min(2, { message: 'Name should be at least 2 characters' }),
+      .min(2, { message: t('Name should be at least 2 characters') }),
     receivingorganizationname: string()
       .max(100, {
-        message: 'Organization name should not exceed 100 characters'
+        message: t('Organization name should not exceed 100 characters')
       })
-      .min(2, { message: 'Name should be at least 2 characters' }),
+      .min(2, { message: t('Name should be at least 2 characters') }),
     websiteurl: string()
       .max(1000, {
-        message: 'Website URL should not exceed 1000 characters'
+        message: t('Website URL should not exceed 1000 characters')
       })
-      .url({ message: 'Invalid url' }),
+      .url({ message: t('Invalid url') }),
     country: string()
       .max(1000, {
         message: 'Country should not exceed 1000 characters'
@@ -106,13 +106,13 @@ const PartnershipApplication: NextPage = () => {
       })
       .nonempty(),
     message: string().max(1000, {
-      message: 'Message should not exceed 1000 characters'
+      message: t('Message should not exceed 1000 characters')
     }),
     orgWalletAddress: string()
       .max(42, {
         message: 'Wallet Address should be within 42 characters'
       })
-      .regex(/^0x[a-fA-F0-9]{40}$/, { message: 'Invalid Ethereum address' })
+      .regex(/^0x[a-fA-F0-9]{40}$/, { message: t('Invalid address') })
   })
 
   const form = useZodForm({
@@ -354,8 +354,8 @@ const PartnershipApplication: NextPage = () => {
               txHash={
                 data?.hash ? data?.hash : broadcastData?.broadcast?.txHash
               }
-              indexing="Form Submission in progress, please wait!"
-              indexed="Form Submission created successfully"
+              indexing={t('Form Submission in progress, please wait!')}
+              indexed={t('Form Submission created successfully')}
               type="PartnershipApplication"
               urlPrefix="posts"
             />

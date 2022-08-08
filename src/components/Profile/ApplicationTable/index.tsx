@@ -12,6 +12,7 @@ import { useFilters, useTable } from 'react-table'
 import { useAppPersistStore } from 'src/store/app'
 
 import App from '../App'
+import NFTDetails from './NFTdetails'
 
 interface Props {
   profile: Profile
@@ -59,6 +60,7 @@ const ApplicationTable: FC<Props> = ({
   const handleTableData = async (data: any) => {
     return Promise.all(
       data.map(async (i: any, index: number) => {
+        console.log(i)
         let verified = false
         if (i.collectNftAddress) verified = true
         return {
@@ -211,6 +213,17 @@ const ApplicationTable: FC<Props> = ({
                         setTableData([...tableData])
                       }
                     }
+                  }}
+                />
+                <NFTDetails
+                  address={addressData[index]}
+                  callback={(data: any) => {
+                    handleNFTData(
+                      data,
+                      index,
+                      tableData[index].verified.postID,
+                      tableData[index].organizationname
+                    )
                   }}
                 />
               </>
