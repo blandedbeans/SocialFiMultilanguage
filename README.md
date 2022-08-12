@@ -3,7 +3,7 @@
     <h1>BCharity</h1>
     <strong>Group-driven, decentralized, and permissionless public good social media Web3.0</strong>
 </div>
-<br>
+<br>a
 <div align="center">
     <a href="https://vercel.com/bcharity?utm_source=BCharity&utm_campaign=oss">
         <img src="https://therealsujitk-vercel-badge.vercel.app/?app=bcharity" alt="Vercel">
@@ -63,4 +63,5 @@ and visit http://localhost:4783
 
 ## ⚖️ License
 
+f
 BCharity is open-sourced software licensed under the BCharity with © [GNU General Public License 3.0](LICENSE).
