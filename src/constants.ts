@@ -44,6 +44,7 @@ export const RARIBLE_URL = IS_MAINNET
   : 'https://rinkeby.rarible.com'
 export const IMAGEKIT_URL_PROD = 'https://ik.imagekit.io/lensterimg/'
 export const IMAGEKIT_URL_DEV = 'https://ik.imagekit.io/lensterdev/'
+export const ARWEAVE_GATEWAY = 'https://arweave.net'
 export const IMAGEKIT_URL = IS_PRODUCTION ? IMAGEKIT_URL_PROD : IMAGEKIT_URL_DEV
 
 // Web3
@@ -51,7 +52,7 @@ export const ALCHEMY_KEY = process.env.NEXT_PUBLIC_ALCHEMY_KEY
 export const ALCHEMY_RPC = IS_MAINNET
   ? `https://polygon-mainnet.g.alchemy.com/v2/${ALCHEMY_KEY}`
   : `https://polygon-mumbai.g.alchemy.com/v2/${ALCHEMY_KEY}`
-
+export const ARWEAVE_KEY = process.env.NEXT_PUBLIC_ARWEAVE_KEY
 export const POLYGON_MAINNET = {
   ...chain.polygon,
   name: 'Polygon Mainnet',

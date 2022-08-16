@@ -17,7 +17,7 @@ import { PencilAltIcon } from '@heroicons/react/outline'
 import Logger from '@lib/logger'
 import omit from '@lib/omit'
 import splitSignature from '@lib/splitSignature'
-import uploadToIPFS from '@lib/uploadToIPFS'
+import uploadToArweave from '@lib/uploadToArweave'
 import countries from 'i18n-iso-countries'
 import enLocale from 'i18n-iso-countries/langs/en.json'
 import { NextPage } from 'next'
@@ -250,7 +250,7 @@ const PartnershipApplication: NextPage = () => {
     if (!isAuthenticated) return toast.error(CONNECT_WALLET)
 
     setIsUploading(true)
-    const { path } = await uploadToIPFS({
+    const id = await uploadToArweave({
       version: '1.0.0',
       metadata_id: uuid(),
       content: `@${receivingorganizationname} Partnership Application`,
@@ -324,7 +324,7 @@ const PartnershipApplication: NextPage = () => {
         options: { overrideSigNonce: userSigNonce },
         request: {
           profileId: currentUser?.id,
-          contentURI: `https://ipfs.infura.io/ipfs/${path}`,
+          contentURI: `https://arweave.net/${id}`,
           collectModule: {
             freeCollectModule: {
               followerOnly: false
